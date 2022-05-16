@@ -13,7 +13,7 @@ document.addEventListener("click", (event)=>
                 top: 3900, 
                 left: 0, 
                 behavior: 'smooth' 
-              })
+              });
         
       
     }
