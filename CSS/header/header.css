@@ -1,0 +1,207 @@
+@import url("./animations.css");
+@import url("./header-menu.css");
+
+header
+{
+    position: relative;
+    display: flex;
+    height:90vh;
+    bottom:10vh;
+    border: 5px solid rgb(208, 255, 0);
+    
+    align-items: center;
+    justify-content:center;
+    background:url("https://images.pexels.com/photos/698808/pexels-photo-698808.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter:invert(100%);
+    filter:brightness(100%);
+    backdrop-filter: blur(0px);
+    background-color: black;
+ 
+}
+.effect-layer
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+3,000000+100&0+0,0.65+40 */
+    background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.05) 3%, rgba(0,0,0,0.65) 40%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.05) 3%,rgba(0,0,0,0.65) 40%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.05) 3%,rgba(0,0,0,0.65) 40%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    backdrop-filter: blur(0px);
+    z-index: 3;
+    animation: headerImgBlur 10s infinite alternate;;
+}
+.social-header
+{
+    position: absolute;
+    top:10vh;
+    left: 5vh;
+    width: 15vw;
+    height: 10vh;
+    border: 1px solid yellow;
+    z-index:3;
+}
+.container-header-center
+{
+    position:absolute;
+    display: flex;
+    width: 100Vw;
+    height: 100%;
+    border: 1px solid rgb(13, 228, 5);
+    
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+.header-left
+{
+    position:absolute;
+    height: 1vh;
+    left:25%;
+    bottom:22%;
+    box-shadow: 0px 0px 1px -2px black;
+    border-right:1px solid rgb(255, 255, 255);
+    z-index: 4;
+
+    animation: leftLine 3s  forwards;
+}
+.header-right
+{
+    position:absolute;
+    width: 49.35vw; /*  100% = 73.4Vw;*/
+    height: 2vh;
+    right:25%;
+    bottom:22%;
+    border-left:1px solid rgb(255, 255, 255);
+    z-index: 3;
+   
+
+    animation: rightLine 3.5s forwards;
+
+    
+    
+    filter:invert(100%);
+    filter:brightness(100%);
+    background:url("https://images.pexels.com/photos/698808/pexels-photo-698808.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.social-whats
+{
+    width:50px;
+    height:50px;
+    background: url("../../icons/app.png");
+    background-size: contain;
+}
+.header-center
+{
+    display:flex;
+    position: absolute;
+    width:70vw; 
+    height: 50vh;
+    /* border: 2px solid white; */
+   
+    
+    /* animation:  headerCenter  2s forwards   cubic-bezier(0,.31,1,.98) 1s ; */
+    
+    z-index: 3;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border:2px dashed red;  */
+    white-space: nowrap;
+    color:white;
+    
+    font-size:25pt;
+    flex-wrap: nowrap;
+    filter: blur(0px);
+}
+.header-right div
+{
+    opacity: 0.95;
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0.65+100;Neutral+Density */
+    background: -moz-linear-gradient(left,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#a6000000',GradientType=1 ); /* IE6-9 */
+}
+header::before
+{
+    position:absolute;
+    top:20%;
+    right:calc(50% - 20%);
+    content: "";
+    transform:skewX(-60deg);
+    height:1px;
+    width:0%;
+    background-color:rgb(219, 209, 60);
+    z-index: 4;
+   
+    animation:topLine 4s forwards ;  
+}
+header::after
+{
+    
+    position:absolute;
+    bottom: 20%;
+    right:70%;
+    content: "";
+    height:1px;
+    width:0.1%;
+    background-color:rgb(219, 209, 60);
+    transform: rotate(180deg);
+    transform-origin:right;
+    z-index: 3;
+    animation:botLine 0.5s forwards 2.2s;  
+}
+
+
+
+
+
+
+
+.header-center sub 
+{
+    margin:0;
+    padding:0;
+    line-height: 0;
+    font-size:15pt;    
+}
+
+
+
+

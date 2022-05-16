@@ -1,0 +1,11 @@
+@media (orientation: portrait) and (max-width: 1200px) {
+    .adv-aside
+    {
+        display: none;
+    }
+    .my-home article
+    {
+        
+        width: 95%;
+    }
+}
