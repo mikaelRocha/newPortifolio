@@ -33,7 +33,6 @@ main
 
 .adv-aside
 {
-    /* position: absolute; */
     width: 20vw;
     height:90vw;
     max-height:85vh;
@@ -41,14 +40,13 @@ main
     align-self: center;
     justify-self: center;
     border: 1px solid black;
-    /* transform: translatex(100px);; */
+ 
 
 
 }
 
 article
 {
-    /* position: absolute; */
     width: 70vw;
     max-height:75vh;
     height:95%;
@@ -83,4 +81,22 @@ article
     padding-top: 10px;
     border: 1px solid black;
     margin-top:80px;
+}
+.my-pool
+{
+    position: relative;
+    display:flex;
+    width:90vw;
+    height:80vw;
+    max-height:80vh;
+    margin:auto;
+    margin-top:50px;
+    border: 1px solid black;
+    
+
+    flex-direction:row-reverse;
+    justify-content: center;
+    align-items: center;
+
+
 }

@@ -75,23 +75,7 @@ header
     align-items:center;
     justify-content:center;
 }
-.social-header::before
-{
- /* content:" ";
- position: absolute;
- width:14.5vw;
- border:1px solid rgba(255, 255, 255, 0);
- height:18.5vh;
 
- 
- border-radius:0px 0px 50% 0%;
- transform: rotate(0deg);
- box-shadow: 5px 5px 5px rgb(0, 0, 0);
-
-
- right:-0.1vw;
- bottom: 0vh; */
-}
 .container-header-center
 {
     position:absolute;
@@ -138,6 +122,36 @@ header
     background-repeat: no-repeat;
     background-position: center;
 }
+header::before
+{
+    position:absolute;
+    top:20%;
+    right:calc(50% - 20%);
+    content: "";
+    transform:skewX(-60deg);
+    height:1px;
+    width:0%;
+    background-color:rgb(219, 209, 60);
+    z-index: 4;
+   
+    animation:topLine 4s forwards ;  
+}
+header::after
+{
+    
+    position:absolute;
+    bottom: 20%;
+    right:70%;
+    content: "";
+    height:1px;
+    width:0%;
+    background-color:rgb(219, 209, 60);
+    transform: rotate(180deg);
+    transform-origin:right;
+    z-index: 3;
+    animation:botLine 0.5s forwards 2.2s;  
+}
+
 
 
 
@@ -203,35 +217,6 @@ header
     background: -webkit-linear-gradient(left,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to right,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#a6000000',GradientType=1 ); /* IE6-9 */
-}
-header::before
-{
-    position:absolute;
-    top:20%;
-    right:calc(50% - 20%);
-    content: "";
-    transform:skewX(-60deg);
-    height:1px;
-    width:0%;
-    background-color:rgb(219, 209, 60);
-    z-index: 4;
-   
-    animation:topLine 4s forwards ;  
-}
-header::after
-{
-    
-    position:absolute;
-    bottom: 20%;
-    right:70%;
-    content: "";
-    height:1px;
-    width:0.1%;
-    background-color:rgb(219, 209, 60);
-    transform: rotate(180deg);
-    transform-origin:right;
-    z-index: 3;
-    animation:botLine 0.5s forwards 2.2s;  
 }
 
 
