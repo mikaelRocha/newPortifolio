@@ -7,19 +7,19 @@
         border:none;
     }
     40%
-    {   width: 49.35vw;;
+    {   width: 100%;
         height:50vh;
         border:none;
         
     }
     81%
     {
-        border-left:1px solid rgb(255, 255, 255);
+        border-left:1px solid var(--horizontalLines);
         
     }
     100%
     {
-        border-left:1px solid rgb(255, 255, 255);
+        border-left:1px solid var(--horizontalLines);
         width:0vh;
         height:50vh;
     }  
