@@ -166,6 +166,14 @@ header::after
 
 
 
+/* ################################ 2º Nivel ######################### */
+
+
+
+
+
+
+
 
 
 
@@ -225,13 +233,85 @@ header::after
 
 
 
+
+
+/* ################################## NIVEL 3 ####################3# */
+
+
+
+
+
+
+
 .header-center sub 
 {
-    margin:0;
-    padding:0;
-    line-height: 0;
-    font-size:15pt;    
+    position:absolute;
+    top:23%;  
 }
+.header-center h1
+{
+    position:absolute;
+    top:10%;
+    text-shadow: 0 0 5px rgb(255, 255, 0);
+    z-index: 1;
+}
+
+.header-center .linkGit
+{
+    display:flex;
+    position: absolute;
+    bottom:10%;
+    height:10vh;
+    width:70%;
+    /* border: 1px solid white; */
+
+    gap:1vh;
+}
+.header-center .linkGit li
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex:0.8;
+    list-style: none;
+    border:1px solid white;
+    /* box-shadow: 0 0 5px 10px rgba(255, 255, 255, 0); */
+}
+
+.header-center .linkGit li:hover
+{
+    background-color: rgba(255, 255, 255, 0.459);
+    animation: linkGitBtnEffect 1s backwards;
+    border:0px solid white;
+ 
+}
+
+@keyframes linkGitBtnEffect 
+{
+
+10%
+    {
+        box-shadow:0 0 0px 10px rgba(255, 255, 255, 0.459);
+        text-shadow: 3px -5px  5px  white;       
+    }
+ 10%
+    {
+        box-shadow:0 0 0px 10px rgba(255, 255, 255, 0.459);
+    }
+    100%
+    {
+        text-shadow: 10px -10px  5px  rgba(255, 255, 255, 0);  
+    }
+
+}
+
+
+
+
+
+
+
+
 
 
 

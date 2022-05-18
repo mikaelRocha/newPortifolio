@@ -2,7 +2,7 @@ const aboutButton = document.getElementById('b3');
 const projectsButton = document.getElementById('b2');
 const projectsElement       = document.querySelector('.my-projects');
 const aboutElement       = document.querySelector('.my-about');
-const aboutPool       = document.querySelector('.my-pool');
+const myPool       = document.querySelector('.my-pool');
 console.log(window) ;
 
 document.addEventListener("click", (event)=>
@@ -11,7 +11,7 @@ document.addEventListener("click", (event)=>
     {
         console.log("working")
             window.scrollBy({ 
-                top: 3900, 
+                top: aboutElement.getBoundingClientRect().top  -  100, 
                 left: 0, 
                 behavior: 'smooth' 
               });
@@ -33,7 +33,7 @@ document.addEventListener("click", (event)=>
     {
         console.log("working")
             window.scrollBy({ 
-                top: aboutPool.getBoundingClientRect().top  -  100,
+                top: myPool.getBoundingClientRect().top  -  100,
                 left: 0, 
                 behavior: 'smooth' 
               });

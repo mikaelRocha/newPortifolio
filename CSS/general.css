@@ -28,10 +28,70 @@ body
 .cool-circle
 {
     position: absolute;
-    transform: translateY(-10vw);
-    right:10%;
+    /* transform: translateY(-10vw); */
+    right:0%;
+    top:70vh;
     border-radius: 50%;
-    
-    padding:10vw;
+    /* border:10px solid rgba(0, 128, 0, 0);
+    border-top:15px solid green;
+    border-right:15px solid green;
+     */
+    padding:10vh;
     background-color:red;
+    z-index:1;
+
+    
+}
+.inside-div
+{
+    position: absolute; 
+    padding:10vh;
+    right:0;
+    bottom:10vh;
+    border-radius: 50%;
+    background-color:yellow;
+    z-index: 4;
+}
+.inside-div:before 
+{
+position:absolute;
+content: "";
+top:10%;
+bottom:10%;
+right:10%;
+left:10%;
+background-color:black;
+border-radius: 50%;
+
+border:2px solid white;
+box-shadow: 0px 0px 5px 4px  black;
+}
+.cool-circle:after 
+{
+    content: " ";
+    position: absolute;
+    width:5vh;
+    height:115vh;
+    top:-100vh;
+    right:0%;
+    box-shadow: -3px 0px 8px  black, -10px 0px 0 0px yellow;
+    
+    background-color:black;
+    border-left: 1px solid rgb(255, 255, 255);
+   
+}
+
+.cool-circle::before  
+{
+    content: " ";
+    position: absolute;
+    width:119vw;
+    height:80px;
+    top:12vh;
+    left:-100vw;
+    border-top: 2px white solid;
+    
+    background-color:black;
+    box-shadow: 0px -3px 8px  black, 0px -10px 0 10px yellow; 
+   
 }

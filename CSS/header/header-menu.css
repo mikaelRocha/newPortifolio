@@ -2,7 +2,7 @@
 nav
 {
     position:absolute;
-    left:1vw;
+    left:calc(50%-70vw);
     align-self:flex-end;
     margin-bottom: 5px;
     margin-left: 0px;
