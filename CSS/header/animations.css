@@ -48,7 +48,6 @@
     }  
 }
 
-
 @keyframes botLine 
 {
     100%
@@ -58,8 +57,6 @@
     }
     
 }
-
-
 
 @keyframes headerImgBlur 
 {
@@ -94,3 +91,28 @@
     }
     
 }
+
+@keyframes linkGitBtnEffect 
+{
+
+0%
+    {
+        box-shadow:0 0 0px 20px rgba(255, 255, 255, 0.459);  
+    }
+ 10%
+    {
+        box-shadow:0 0 20px 0px rgba(255, 255, 255, 0.459);
+    }
+    80%
+    {
+        text-shadow:0 0 5px  rgb(255, 251, 0)
+    }
+    100%
+    {
+        text-shadow:0px 0px 5px  rgb(255, 251, 0)
+    }
+   
+
+}
+
+
