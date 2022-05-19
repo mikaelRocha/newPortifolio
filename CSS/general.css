@@ -9,6 +9,7 @@ body
     width:100vw;
     height:fit-content;
     background-color:black;
+    border: 0px white solid;
 }
 #ttop
 {
@@ -31,12 +32,14 @@ body
 {
     position: absolute;
     right:0%;
-    top:70vh;
-    border-radius: 50%;
+    width:150px;
+    height:150px;
+    top:637px;
+    border-radius: 50%; 
 
-    padding:10vh;
+    
     /* background-color:red; */
-    z-index:1;
+    z-index:2;
 
     
 }
@@ -44,14 +47,15 @@ body
 {
     content: " ";
     position: absolute;
-    width:5vh;
-    height:115vh;
+    width:3vw;
+    height:110vh;
     top:-100vh;
     right:0%;
     box-shadow: -3px 0px 8px  black, -10px 0px 0 0px yellow;
+    z-index: 1;
     
     background-color:black;
-    border-left: 1px solid rgb(255, 255, 255);
+    border-left: 2px solid rgb(255, 255, 255);  
    
 }
 
@@ -59,9 +63,9 @@ body
 {
     content: " ";
     position: absolute;
-    width:100vw;
+    width:  100vw;
     height:80px;
-    top:12vh;
+    top:109px;
     right:0vw;
     border-top: 2px white solid;
     
@@ -73,9 +77,9 @@ body
 .inside-div
 {
     position: absolute; 
-    padding:10vh;
+    padding:6vw;
     right:0;
-    bottom:10vh;
+    bottom:-10px0;
     border-radius: 50%;
     background-color:yellow;
     z-index: 4;
