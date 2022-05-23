@@ -10,12 +10,13 @@ main
     flex-direction: column;
     background-color: rgb(46, 45, 45);
     /* border: 2px white solid; */
+    z-index: 1;
 }
 main::before
 {
     position: absolute;
     content:"";
-    right: 6.5vw;
+    right: 2vw;
     top:-5vh;
     height:100%;
     width: 2vw;

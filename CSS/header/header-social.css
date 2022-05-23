@@ -1,0 +1,106 @@
+
+
+.container-social-header
+{
+position:absolute;
+top:15vh;
+left: 5vh;
+height:300px;
+width:300px;
+
+background: inherit;
+
+
+--social-width: 250px;
+--social-height: 100px;
+
+}
+
+.social-header
+{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: var(--social-width);
+    height: var(--social-height);
+    left: 0px;
+    top:0px;
+    border-radius: 0%;
+    /* border: 1px solid yellow; */
+    box-shadow: 
+    inset 0px 0px 200px rgb(0, 0, 0),
+    -1px -1px 5px 0px rgba(255, 255, 255, 0),
+    -10px -10px 5px 5px rgba(0, 0, 0, 0),
+    10px 10px 10px 10px rgba(3, 3, 3, 0);
+    
+    
+    z-index:5;
+  
+    
+    transition-duration: 0.5s; 
+  
+    gap:20px;
+    justify-content:center;
+    background:inherit;
+    align-items:center;
+ 
+   
+
+  
+   
+}
+.social-header-place
+{
+ 
+   position: relative;
+   width: var(--social-width);
+   height: var(--social-height);
+   left: 0px;
+   top:0px;
+ 
+   /* background-color:rgb(255, 239, 11); */
+   box-shadow: inset 0px 0 5px 0px black;
+   border-radius: 7%;
+   z-index: 4;
+   
+}
+.container-social-header:hover > .social-header
+{
+    width: calc(30% + var(--social-width));
+    height: calc(10% + var(--social-height));
+
+transition-duration: 0.3s;
+
+background:inherit;
+
+left: 30px;
+top:30px;
+box-shadow: 
+inset 0px 0px 200px rgb(77, 76, 76),
+-1px -1px 5px 0px rgb(255, 255, 255),
+-10px -10px 5px 5px black,
+10px 10px 10px 10px rgb(3, 3, 3);
+
+}
+.social-whats
+{
+    /* position:relative; */
+    margin:5px;
+    width:20%;
+    height:50%;
+   
+    background: url("../../icons/app.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+.social-gmail
+{
+    /* position:relative; */
+    width:20%;
+    height:50%;
+    background: url("../../icons/gmail-icon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}

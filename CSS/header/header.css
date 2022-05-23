@@ -1,13 +1,21 @@
 @import url("./animations.css");
 @import url("./header-menu.css");
-header
+@import url("./header-social.css");
+@import url("./header-center/header-center.css");
+@import url("./cool-circle.css");
+.main-header
 {
+
+    --header-width:100vw;
+    --header-height:850px;
+
     --testBorder: 3px dashed rgb(255, 0, 0);
 /*    border: var(--testBorder);               */
 
 /* Line Colors */
     --verticalLines:yellow;
     --horizontalLines:rgb(255, 255, 255);
+
 /* Line margins */
     --horizontalLinesMargin:20%;
     --verticalLinesMargin:22%;
@@ -15,18 +23,17 @@ header
 }
 
 
-header
+.main-header
 {
     position: relative;
     display: flex;
-    width: 100vw;
-    height:850px;
+    width: var(--header-width);
+    height:var(--header-height);
     bottom:120px;
     /* border: var(--testBorder); */
     
     
     align-items: center;
-    overflow:hidden;
     justify-content:center;
     background:url("https://images.pexels.com/photos/698808/pexels-photo-698808.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
     background-attachment: fixed;
@@ -36,6 +43,7 @@ header
     backdrop-filter: blur(0px);
     background-color: black;
  
+    z-index: 2;
 }
 .effect-layer
 {
@@ -50,106 +58,22 @@ header
     background: radial-gradient(ellipse at center,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.05) 3%,rgba(0,0,0,0.65) 40%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     backdrop-filter: blur(0px);
-    z-index: 3;
+    z-index: 2;
 
     animation: headerImgBlur 10s infinite alternate;
 }
-.social-header
+
+.big-image-on-right
 {
-    position: absolute;
-    display: flex;
-    width: 250px;
-    height: 19vh;
-    top:10vh;
-    left: 5vh;
-    /* border: 1px solid yellow; */
-    box-shadow:5px 5px 8px rgb(0, 0, 0), 11px 11px 0px 5px yellow;
-    border:2px solid rgba(255, 255, 255, 0);
-    border-right:2px solid white;
-    border-bottom:2px solid white;
+position:absolute;
+background:rgba(238, 228, 228, 0.664);
+width:800px;
+height:800px;
+top: 80%;
+right:10px;
+z-index: 6;
+pointer-events: none;
 
-    gap:1vw;
-    z-index:4;
-
-    padding:2vh;
-    border-radius: 0 0 50%;
-    align-items:center;
-    justify-content:center;
-}
-
-.container-header-center
-{
-    position:absolute;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    /* border: 1px solid rgb(13, 228, 5); */
-    
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-}
-.header-left
-{
-    position:absolute;
-    height: 0;
-    left:var(--horizontalLinesMargin);
-    bottom:var( --verticalLinesMargin);
-    box-shadow: 0px 0px 1px -2px black;
-    border-left:1px solid var(--horizontalLines);
-    z-index: 4;
-
-    animation: leftLine 3s  forwards;
-
-
-}
-.header-right
-{
-    position:absolute;
-    width: 100%;
-    height: 0vh;
-    right:var(--horizontalLinesMargin);
-    bottom:var( --verticalLinesMargin);
-    z-index: 3;
-   
-
-    animation: rightLine 3.5s forwards;
-
-    
-    background:url("https://images.pexels.com/photos/698808/pexels-photo-698808.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-header::before
-{
-    position:absolute;
-    top:20%;
-    right:calc(50% - 20%);
-    content: "";
-    height:1px;
-    width:0%;
-    background-color:rgb(219, 209, 60);
-    z-index: 4;
-   
-    animation:topLine 4s forwards ;  
-}
-header::after
-{
-    
-    position:absolute;
-    bottom: 20%;
-    right:70%;
-    content: "";
-    height:1px;
-    width:0%;
-    background-color:rgb(219, 209, 60);
-    transform: rotate(180deg);
-    transform-origin:right;
-    z-index: 3;
-    animation:botLine 0.5s forwards 2.2s;  
 }
 
 
@@ -157,131 +81,6 @@ header::after
 
 
 
-
-
-
-
-
-
-
-
-
-/* ################################ 2º Nivel ######################### */
-
-
-
-
-
-
-
-
-
-
-
-.social-whats
-{
-    width:50px;
-    height:50px;
-    background: url("../../icons/app.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    
-}
-.header-center
-{
-    display:flex;
-    position: absolute;
-    width:70vw; 
-    height: 50vh;
-    /* border:var(--testBorder); */
-   
-
-    z-index: 3;
-    overflow: hidden;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* border:2px dashed red;  */
-    white-space: nowrap;
-    color:white;
-    
-    font-size:25pt;
-    flex-wrap: nowrap;
-    filter: blur(0px);
-}
-.header-right div
-{
-    opacity: 0.95;
-    position:absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0.65+100;Neutral+Density */
-    background: -moz-linear-gradient(left,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#a6000000',GradientType=1 ); /* IE6-9 */
-}
-
-
-
-
-
-
-
-
-
-/* ################################## NIVEL 3 ####################3# */
-
-
-
-
-
-
-
-.header-center sub 
-{
-    position:absolute;
-    top:23%;  
-}
-.header-center h1
-{
-    position:absolute;
-    top:10%;
-    text-shadow: 0 0 5px rgb(255, 255, 0);
-    z-index: 1;
-}
-
-.header-center .linkGit
-{
-    display:flex;
-    position: absolute;
-    bottom:10%;
-    height:10vh;
-    width:70%;
-    /* border: 1px solid white; */
-
-    gap:1vh;
-}
-.header-center .linkGit li
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex:0.8;
-    list-style: none;
-    border:1px solid white;
-    /* box-shadow: 0 0 5px 10px rgba(255, 255, 255, 0); */
-}
-
-.header-center .linkGit li:hover
-{
-    background-color: rgba(255, 255, 255, 0.459);
-    animation: linkGitBtnEffect 1s forwards;
-    border:0px solid white;
- 
-}
 
 
 
