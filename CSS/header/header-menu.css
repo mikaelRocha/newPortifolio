@@ -45,10 +45,10 @@ nav ul li
 
 nav ul li::before 
 {
+    content: " ";
     position:absolute;
     top:-2px;
     right:90%;
-    content: "";
     transform:skewX(-60deg);
     height:2px;
     width:0%;

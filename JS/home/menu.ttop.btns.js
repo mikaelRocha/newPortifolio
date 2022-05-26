@@ -3,7 +3,7 @@ const projectsButton = document.getElementById('b2');
 const projectsElement       = document.querySelector('.my-projects');
 const aboutElement       = document.querySelector('.my-about');
 const myPool       = document.querySelector('.my-pool');
-console.log(window) ;
+// console.log(window) ;
 
 document.addEventListener("click", (event)=>
 {
