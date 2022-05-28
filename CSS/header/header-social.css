@@ -39,7 +39,7 @@ background: inherit;
     
     transition-duration: 0.5s; 
   
-    gap:1px;
+
     justify-content:center;
     background:inherit;
     align-items:center;
@@ -71,12 +71,12 @@ background: inherit;
 
 transition-duration: 0.3s;
 
-background:inherit;
+/* background:rgb(71, 167, 52);  */
 
 left: 30px;
 top:30px;
 box-shadow: 
-inset 0px 0px 200px rgb(77, 76, 76),
+inset 0px 0px 200px rgba(77, 76, 76, 0),
 -1px -1px 5px 0px rgb(255, 255, 255),
 -10px -10px 5px 5px black,
 10px 10px 10px 10px rgb(3, 3, 3);
@@ -90,7 +90,7 @@ inset 0px 0px 200px rgb(77, 76, 76),
     align-items: center;
     justify-content: center;
    
-    width: 30%;
+    width: 50%;
     height:100%;
 
     transition:0.5s;
@@ -112,7 +112,7 @@ inset 0px 0px 200px rgb(77, 76, 76),
  }
 .social-gmail
 {
-    width: 30%;
+    width: 50%;
     height:100%;
     background: url("../../icons/gmail-icon.png");
     background-size: 50%;
