@@ -1,5 +1,5 @@
-@import url("./mediasquerys/mainMedia.css");
-@import url("./my.home.css");
+@import url("./home/mediasquerys/mainMedia.css");
+@import url("./home/my.home.css");
 
 main
 {
@@ -24,42 +24,19 @@ main::before
     right: 2vw;
     top:-5vh;
     box-shadow: 
-    2px 1px 0 0 white,
+    2px 1px 0 2px white,
     2vw  0 0 10px black,
-    5vw  0 0 10px black,
-    7vw  0 0 10px black,
-    9vw  0 0 10px black,
-    11vw  0 0 0px black,
-
+ 
 
     inset -5px  0 10px 0px black,
     -1px 0 20px 0 black
     
     ;
-    z-index: 1;
+    z-index: 9;
 
     background-color:yellow;
   
 }
-
-
-
-
-.adv-aside
-{
-    width: 20vw;
-    height:90vw;
-    max-height:85vh;
-    margin:10px;
-    align-self: center;
-    justify-self: center;
-    border: 1px solid black;
- 
-
-
-}
-
-
 
 .my-projects
 {

@@ -1,3 +1,5 @@
-import './home/menu.ttop.btns.js'
-import './home/highlight.project.hover.js'
-import './home/slide.btns.js'
+import './menu.ttop.btns.js'
+
+
+import './main/home/highlight.project.hover.js'
+import './main/home/slide.btns.js'

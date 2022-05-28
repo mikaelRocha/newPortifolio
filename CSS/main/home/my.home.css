@@ -27,6 +27,7 @@ top:60%;
 
 background-color:yellow;
 }
+
 .my-home::after
 {
     content: " ";
@@ -59,7 +60,7 @@ transform-origin: left;
 {
     width: 100%;
     height:100%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     overflow: hidden;
 
 
@@ -70,10 +71,24 @@ transform-origin: left;
     width:150px;
     height:100%;
     left:0;
-    border: 1px solid rgb(236, 11, 11);
+    /* border: 1px solid rgb(236, 11, 11); */
+    /* border-right:  1px solid black; */
+    backdrop-filter: blur(5px);
     align-self: flex-end;
 }
-.highlight-left:before
+.highlight-left:before 
+{
+    content: "";
+    position: absolute;
+    width:1px;
+    height:600px;
+    top:calc(50% - 300px);
+    right:-1px;
+
+
+    background:black;
+}
+.highlight-left:after
 {
    
         content: "<";
@@ -82,23 +97,41 @@ transform-origin: left;
     width : 104%;
     height: 120px;
     left: 1%;
-    top:42%;
+    top:calc(50% - 60px);
     
     align-items: center;
     justify-content: center;
     background:rgb(94, 92, 92);
     font-size:35pt;
-    box-shadow:inset 0 0 50px 40px yellow;
+    box-shadow:inset 0 0 50px 40px yellow,
+    -10px 30px 10px -10px rgb(0, 0, 0)
+    ;
+
     
 }
+.highlight-left:hover
+{
+    background:rgb(112, 109, 109);
+}
+
+
+
 .highlight-right
 {
     position: absolute;
     width:150px;
     height:100%;
     right:0;
-    border: 1px solid rgb(184, 231, 15);
+    /* border: 1px solid rgb(184, 231, 15); */
     align-self: flex-end;
+}
+.highlight-border-bottom
+{
+    position: absolute;
+    width: 100%;
+    height:10px;
+    bottom:0;
+    background-color:yellow;
 }
 
 #highlight-center ul
@@ -106,14 +139,14 @@ transform-origin: left;
     width: 100%;
     height: fit-content;
    
-    border: 1px solid rgb(146, 11, 236);
+    /* border: 1px solid rgb(146, 11, 236); */
 }
 .container-soon
 {
     display: flex;
     width: 100%;
     height: 80vh;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     margin-top:0;
 
     transition-duration: 0.3s;

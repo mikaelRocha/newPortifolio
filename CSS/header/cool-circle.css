@@ -18,9 +18,9 @@
     content: " ";
     position: absolute;
     width:200px;
-    height:var(--header-height);
-    top:-70vh;
-    right:0%;
+    height:1000px;
+    top:-800px;
+  
     box-shadow: -3px 0px 8px  black, -10px 0px 0 0px yellow;
     z-index: 2;
     
