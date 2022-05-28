@@ -39,7 +39,7 @@ background: inherit;
     
     transition-duration: 0.5s; 
   
-    gap:20px;
+    gap:1px;
     justify-content:center;
     background:inherit;
     align-items:center;
@@ -90,28 +90,36 @@ inset 0px 0px 200px rgb(77, 76, 76),
     align-items: center;
     justify-content: center;
    
-    width: 50%;
+    width: 30%;
     height:100%;
 
     transition:0.5s;
  
     background: url("../../icons/app.png");
-    background-size: contain;
+    background-size: 50%;
     background-repeat: no-repeat;
     background-position: center center;
     
 }
+.social-header:hover  .social-gmail
+{
+    background-color:rgb(167, 48, 48); 
+    
+}
+ .social-header:hover  .social-whats 
+ {
+    background-color:rgb(71, 167, 52); 
+ }
 .social-gmail
 {
-    width: 50%;
+    width: 30%;
     height:100%;
     background: url("../../icons/gmail-icon.png");
-    background-size: contain;
+    background-size: 50%;
     background-repeat: no-repeat;
     background-position: center center;
 
-    transition:0.5s;
-    
+    transition:0.5s; 
 }
 .social-whats:hover
 {

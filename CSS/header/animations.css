@@ -3,12 +3,12 @@
 {
     0%
     {
-        height:50vh;
+        height:80vh;
         border:none;
     }
     40%
     {   width: 100%;
-        height:50vh;
+        height:80vh;
         border:none;
         
     }
@@ -21,7 +21,7 @@
     {
         border-left:1px solid var(--horizontalLines);
         width:0vh;
-        height:50vh;
+        height:80vh;
     }  
 }
 
@@ -30,12 +30,12 @@
   
     80%
     { 
-        height:50vh;
+        height:80vh;
     }
     100%
     {
       
-        height:50vh;
+        height:80vh;
     }  
 }
 

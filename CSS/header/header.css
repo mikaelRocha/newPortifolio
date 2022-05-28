@@ -3,14 +3,15 @@
 @import url("./header-social.css");
 @import url("./header-center/header-center.css");
 @import url("./cool-circle.css");
-.main-header
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');.main-header
 {
 
     --header-width:100vw;
     --header-height:850px;
 
     --testBorder: 3px dashed rgb(255, 0, 0);
-/*    border: var(--testBorder);               */
+
 
 /* Line Colors */
     --verticalLines:yellow;
@@ -71,18 +72,25 @@
     flex-direction: column;
     align-items:center;
   
-    width:2%;  
-    bottom: -70%;
+    width:237px;  
+    bottom: calc(-49% - 120px);
     right:20%;
     z-index: 4;
+    padding-top: 50px;
     /* border: 1px solid white; */
 
 
     transition-duration: 1s;
     background-color: rgb(0, 204, 255);
-    padding: 100px;
     pointer-events: none;
     
+}
+.big-image-on-right span
+{   font-family: 'Macondo', cursive;
+    font-size:40pt;
+    transform: rotate(5deg);
+    font-family: 'Audiowide', cursi
+
 }
 .big-image-on-right img
 {
@@ -91,20 +99,25 @@
     padding:10px;
     backdrop-filter: drop-shadow(5px 5px 20px rgb(255, 255, 255));
     /* border: 1px solid white;     */
+    margin-bottom: 10px;
 }
 
 .big-image-on-right:after
 {
  position: absolute;
- bottom:-65px;
+ bottom:-22%;
+right:calc(50% - 68px);
 
  content :  " ";
- width:135px;
- height:135px;
+
+ width:130px;
+ height:130px;
+
+ /* border: 5px solid white; */
  border-bottom: 5px solid white;
  border-right: 5px solid white;
 
- transform: rotateZ(45deg)
+ transform: rotateZ(40deg) skewX(-10deg);
 
 }
 .big-image-on-right::before
@@ -114,12 +127,12 @@
     
     width: 0%;
     height: 0%;
-    bottom:0;
+    bottom:1px;
     
    
    border-bottom: 100px solid rgb(0, 204, 255);
-   border-left: 100px solid rgba(0, 0, 0, 0);
-   border-right: 100px solid rgba(0, 0, 0, 0);
+   border-left: 119px solid rgba(0, 0, 0, 0);
+   border-right: 119px solid rgba(0, 0, 0, 0);
    transform-origin: bottom;
    transform: rotateX(180deg);
 
