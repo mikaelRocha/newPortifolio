@@ -114,13 +114,14 @@ header::after
 
 .header-center sub 
 {
-    position:absolute;
-    top:23%;  
+    position:relative;
+    bottom: 28%;
+
 }
 .header-center h1
 {
-    position:absolute;
-    top:10%;
+    position:relative;
+    bottom:calc(28% - 15px);
     text-shadow: 0 0 5px rgb(255, 255, 0);
     z-index: 1;
 }
