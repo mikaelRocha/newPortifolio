@@ -1,28 +1,23 @@
 @import url("./animations.css");
-@import url("./header-menu.css");
-@import url("./header-social.css");
-@import url("./header-center/header-center.css");
-@import url("./cool-circle.css");
+@import url("./container-menu-header.css");
+@import url("./container-social-header.css");
+@import url("./container-center-header.css");
+@import url("./container-cool-circle.css");
+@import url("./effect-layer.css");
 
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');.main-header
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+.main-header
 {
-
     --header-width:100vw;
     --header-height:850px;
-
     --testBorder: 3px dashed rgb(255, 0, 0);
-
-
 /* Line Colors */
     --verticalLines:yellow;
     --horizontalLines:rgb(255, 255, 255);
-
 /* Line margins */
     --horizontalLinesMargin:20%;
     --verticalLinesMargin:22%;
-
 }
-
 
 .main-header
 {
@@ -32,7 +27,6 @@
     height:var(--header-height);
     bottom:120px;
     /* border: var(--testBorder); */
-    
     
     align-items: center;
     justify-content:center;
@@ -47,100 +41,69 @@
     z-index: 2;
  
 }
-.effect-layer
-{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+3,000000+100&0+0,0.65+40 */
-    background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.05) 3%, rgba(0,0,0,0.65) 40%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
-    background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.05) 3%,rgba(0,0,0,0.65) 40%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: radial-gradient(ellipse at center,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.05) 3%,rgba(0,0,0,0.65) 40%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-    backdrop-filter: blur(0px);
-    z-index: 2;
 
-    animation: headerImgBlur 10s infinite alternate;
-}
-
-.big-image-on-right
+.highlight-big-image-on-right
 {
     position:absolute;
     display:flex;
-    flex-direction: column;
-    align-items:center;
-  
     width:237px;  
-    bottom: calc(-49% - 120px);
     right:20%;
+    bottom: calc(-49% - 120px);
     z-index: 4;
-    padding-top: 50px;
-    /* border: 1px solid white; */
-
-
+    
     transition-duration: 1s;
+
+    align-items:center;
+    padding-top: 50px;
+    flex-direction: column;
     background-color: rgb(0, 204, 255);
     pointer-events: none;
     
 }
-.big-image-on-right span
-{   font-family: 'Macondo', cursive;
+.highlight-big-image-on-right span
+{  
     font-size:40pt;
-    transform: rotate(5deg);
-    font-family: 'Audiowide', cursi
+    font-family: 'Audiowide', cursive;
 
+    transform: rotate(5deg);
 }
-.big-image-on-right img
+.highlight-big-image-on-right img
 {
     width: 150px;
     height: 150px;
     padding:10px;
     backdrop-filter: drop-shadow(5px 5px 20px rgb(255, 255, 255));
-    /* border: 1px solid white;     */
     margin-bottom: 10px;
 }
 
-.big-image-on-right:after
-{
- position: absolute;
- bottom:-22%;
-right:calc(50% - 68px);
-
- content :  " ";
-
- width:130px;
- height:130px;
-
- /* border: 5px solid white; */
- border-bottom: 5px solid white;
- border-right: 5px solid white;
-
- transform: rotateZ(40deg) skewX(-10deg);
-
-}
-.big-image-on-right::before
+.highlight-big-image-on-right:after
 {
     position: absolute;
-    content: " ";
-    
+    width:130px;
+    height:130px;
+    bottom:-22%;
+    right:calc(50% - 68px);
+
+    transform: rotateZ(40deg) skewX(-10deg);
+
+    content :  " ";
+    border-bottom: 5px solid white;
+    border-right: 5px solid white;
+}
+.highlight-big-image-on-right::before
+{
+    position: absolute;
     width: 0%;
     height: 0%;
     bottom:1px;
     
-   
+    
+    content: " ";
    border-bottom: 100px solid rgb(0, 204, 255);
    border-left: 119px solid rgba(0, 0, 0, 0);
    border-right: 119px solid rgba(0, 0, 0, 0);
    transform-origin: bottom;
    transform: rotateX(180deg);
-
-   
-
-
-    /* z-index: 999; */
-  
 }
 
 

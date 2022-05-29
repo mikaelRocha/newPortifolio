@@ -1,5 +1,4 @@
 
-
 .container-social-header
 {
 position:absolute;
@@ -9,7 +8,6 @@ height:300px;
 width:300px;
 
 background: inherit;
-
 
 --social-width: 250px;
 --social-height: 100px;
