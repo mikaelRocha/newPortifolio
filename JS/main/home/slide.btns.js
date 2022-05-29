@@ -20,8 +20,8 @@ let booleanControl = 1
             console.log(marginTop);
             marginTop = Number(marginTopCutted)
         
-            marginTop = marginTop - slidebtnLeft.getBoundingClientRect().height;
-            comingSoonLi.style.marginTop  = marginTop+"px";
+            marginTop = marginTop - comingSoonLi.getBoundingClientRect().height;
+            comingSoonLi.style.marginTop  =  marginTop+"px";
             //  marginTop = cssObjSoon.getPropertyValue("margin-top")
     
             console.log(marginTop);
@@ -51,8 +51,8 @@ let booleanControl = 1
             let marginTopCutted = marginTop.slice(0,-2);
             marginTop = Number(marginTopCutted)
 
-            marginTop = marginTop + slidebtnLeft.getBoundingClientRect().height;
-            comingSoonLi.style.marginTop  = marginTop+"px";
+            marginTop = marginTop + comingSoonLi.getBoundingClientRect().height;
+            comingSoonLi.style.marginTop  = 50 + marginTop+"px";
             
             
             console.log(marginTop);
@@ -61,7 +61,7 @@ let booleanControl = 1
             {
                 comingSoonLi.style.marginTop = "0"
             }
-            setTimeout(()=>{booleanControl = 1 }, 500)
+            setTimeout(()=>{booleanControl = 1 }, 300)
         }
 }
 })
