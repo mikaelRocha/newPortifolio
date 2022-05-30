@@ -13,18 +13,15 @@ let booleanControl = 1
         {
             booleanControl = 0
             const comingSoonLi = document.getElementById('highlight-center').firstElementChild.firstElementChild
-            const cssObjSoon = window.getComputedStyle(comingSoonLi, null);
+            const cssObjSoon   = window.getComputedStyle(comingSoonLi, null);
         
-            let   marginTop = cssObjSoon.getPropertyValue("margin-top")
+            let   marginTop       = cssObjSoon.getPropertyValue("margin-top")
             const marginTopCutted = marginTop.slice(0,-2);
-            console.log(marginTop);
+
             marginTop = Number(marginTopCutted)
-        
             marginTop = marginTop - comingSoonLi.getBoundingClientRect().height;
+
             comingSoonLi.style.marginTop  =  marginTop+"px";
-            //  marginTop = cssObjSoon.getPropertyValue("margin-top")
-    
-            console.log(marginTop);
     
             if(marginTop < -document.getElementById('highlight-center').firstElementChild.getBoundingClientRect().height)
             {
@@ -45,8 +42,6 @@ let booleanControl = 1
             const comingSoonLi = document.getElementById('highlight-center').firstElementChild.firstElementChild
             const cssObjSoon = window.getComputedStyle(comingSoonLi, null);
             let   marginTop = cssObjSoon.getPropertyValue("margin-top")
-            
-            console.log(marginTop);
 
             let marginTopCutted = marginTop.slice(0,-2);
             marginTop = Number(marginTopCutted)
