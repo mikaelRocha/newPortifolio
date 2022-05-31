@@ -1,6 +1,6 @@
 
 const centerArticle = document.getElementById('highlight-center');
-const bigImage =document.getElementById('highlight-big-image-on-right');
+const bigImage = document.getElementById('highlight-big-image-on-right');
 
 
 centerArticle.addEventListener('mouseover', (event)=>{

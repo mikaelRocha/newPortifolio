@@ -58,5 +58,5 @@ let booleanControl = 1
             }
             setTimeout(()=>{booleanControl = 1 }, 300)
         }
-}
+    }
 })

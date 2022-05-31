@@ -31,33 +31,23 @@ background: inherit;
     -10px -10px 5px 5px rgba(0, 0, 0, 0),
     10px 10px 10px 10px rgba(3, 3, 3, 0);
     border-radius: 5px;
-    overflow: hidden;
-    
+    overflow: hidden;  
     z-index:5;
-  
     
     transition-duration: 0.5s; 
   
-
     justify-content:center;
     background:inherit;
-    align-items:center;
- 
-   
-
-  
-   
+    align-items:center; 
 }
 .social-header-place
 {
- 
    position: relative;
    width: var(--social-width);
    height: var(--social-height);
    left: 0px;
    top:0px;
  
-   /* background-color:rgb(255, 239, 11); */
    box-shadow: inset 0px 0 5px 0px black;
    border-radius: 7%;
    z-index: 4;
@@ -68,19 +58,10 @@ background: inherit;
     width: calc(30% + var(--social-width));
     height: calc(10% + var(--social-height));
 
-transition-duration: 0.3s;
+    transition-duration: 0.3s;
 
-/* background:rgb(71, 167, 52);  */
-
-left: 30px;
-top:30px;
-/* box-shadow: 
-inset 0px 0px 200px rgba(77, 76, 76, 0),
--1px -1px 5px 0px rgb(255, 255, 255),
--10px -10px 5px 5px black,
-10px 10px 10px 10px rgb(3, 3, 3); */
-
-
+    left: 30px;
+    top:30px;
 }
 .social-whats
 {

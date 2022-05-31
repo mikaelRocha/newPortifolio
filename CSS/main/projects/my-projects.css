@@ -32,12 +32,17 @@
     height:fit-content;
     right: 0;
     left: 0;
-    /* border: 1px solid rgb(253, 18, 18); */
-    
+
     gap:20px;
     align-items: center;
     justify-content: center;
     list-style: none;
+    overflow: scroll;
+   
+}
+.container-projects ul::-webkit-scrollbar
+{
+opacity: 0;
 }
 .project-holder
 {
@@ -61,8 +66,9 @@
     align-items: center;
     justify-content: center;
     background: rgba(0, 0, 0, 0.562);
+    z-index: 1;
 }
-.roller-right
+#roller-right
 {
     right:0;
 }
