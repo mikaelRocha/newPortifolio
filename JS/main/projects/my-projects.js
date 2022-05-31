@@ -12,7 +12,6 @@ console.log
 
 btnProjectRollerRight.addEventListener("click", (event)=>
 {
-
     firstProjectsLi.scroll({
         top: 0,
         left: firstProjectsLi.scrollLeft + 1000,

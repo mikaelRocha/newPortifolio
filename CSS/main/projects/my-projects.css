@@ -46,12 +46,37 @@ opacity: 0;
 }
 .project-holder
 {
+    position: relative;
+    display: flex;
     min-width: 500px;
     height: 300px;
-    /* border: 1px solid rgb(218, 253, 18); */
-
-    background: url("https://images.pexels.com/photos/832982/pexels-photo-832982.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    border: 1px solid rgb(218, 253, 18);
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-size: contain;
+
+    text-shadow: 5px 5px 25px white,
+    5px 3px 0px yellow,
+    -10px 3px 10px rgb(255, 0, 255),
+    10px 3px 10px green;
+    ;
+
+    color: rgb(255, 255, 255);
+    font-size:60pt;
+}
+.project-holder:before 
+{
+    content: " ";
+    position: absolute;
+    filter:blur(10px);
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 20px solid yellow;
+    box-shadow:inset 0 0 0 10px;
+
 }
 
 .btns-projects-roller
