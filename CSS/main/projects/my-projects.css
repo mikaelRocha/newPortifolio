@@ -50,21 +50,24 @@ opacity: 0;
     display: flex;
     min-width: 500px;
     height: 300px;
-    border: 1px solid rgb(218, 253, 18);
-    
+    border-radius:10px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-size: contain;
+    background:rgba(128, 128, 128, 0.054);
 
     text-shadow: 5px 5px 25px white,
     5px 3px 0px yellow,
     -10px 3px 10px rgb(255, 0, 255),
     10px 3px 10px green;
     ;
-
     color: rgb(255, 255, 255);
     font-size:60pt;
+}
+.project-holder:hover
+{
+    background:rgba(255, 255, 255, 0.054);
 }
 .project-holder:before 
 {
