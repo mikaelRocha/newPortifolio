@@ -18,5 +18,12 @@ btnProjectRollerRight.addEventListener("click", (event)=>
         left: firstProjectsLi.scrollLeft + 1000,
         behavior: 'smooth'
       });
+})
+btnProjectRollerLeft.addEventListener("click", (event)=>{
 
+    firstProjectsLi.scroll({
+        top: 0,
+        left: firstProjectsLi.scrollLeft - 1000,
+        behavior: 'smooth'
+      });
 })
