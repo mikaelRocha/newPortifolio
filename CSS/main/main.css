@@ -1,6 +1,7 @@
 @import url("./home/mediasquerys/mainMedia.css");
 @import url("./home/my.home.css");
 @import url("./projects/my-projects.css");
+@import url("./about/about.css");
 
 
 main
@@ -44,13 +45,13 @@ main::before
 .my-about
 {
     display:flex;
+    position: relative;
     flex-direction:column;
     align-items:center;
     width:90vw;
     max-height:80vh;
     margin:auto;
     height:80vw;
-    padding-top: 10px;
     border: 1px solid black;
     margin-top:80px;
 }

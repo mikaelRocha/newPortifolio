@@ -1,0 +1,44 @@
+
+
+
+.about-background-circle
+{
+    width:50%;
+    height:0px;
+    position: absolute;
+    top:-60px;
+    border-bottom:60px solid rgb(24, 21, 21) ;
+    border-left:60px solid transparent ;
+    border-right:60px solid transparent ;
+    filter: 
+    drop-shadow(30px 0px 0px yellow)
+    drop-shadow(-30px 0px 0px yellow)
+
+    drop-shadow(-100px 0px 0px rgb(0, 0, 0))
+    drop-shadow(-120px 0px 0px rgb(45, 45, 45))
+    drop-shadow(-100px 0px 0px rgb(0, 0, 0))
+
+    drop-shadow(100px 0px 0px rgb(0, 0, 0))
+    drop-shadow(120px 0px 0px rgb(45, 45, 45))
+    drop-shadow(100px 0px 0px rgb(0, 0, 0))
+    ;
+
+}
+
+.about-title
+{
+    text-align: center;
+    width: 56%;
+    height: 60px;
+    margin:0;
+    border-top:60px solid rgb(24,21,21) ;
+    border-left:10px solid transparent ;
+    border-right:10px solid transparent ;
+
+
+    filter: 
+    drop-shadow(30px 0px 0px yellow)
+    drop-shadow(-30px 0px 0px yellow)
+    ;
+}
+

@@ -11,7 +11,6 @@ background: inherit;
 
 --social-width: 250px;
 --social-height: 100px;
-
 }
 
 .social-header
@@ -51,7 +50,6 @@ background: inherit;
    box-shadow: inset 0px 0 5px 0px black;
    border-radius: 7%;
    z-index: 4;
-   
 }
 .container-social-header:hover > .social-header
 {
@@ -79,13 +77,10 @@ background: inherit;
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: center center;
-    
-    
 }
 .social-header:hover  .social-gmail
 {
     background-color:rgb(155, 64, 64); 
-    
 }
  .social-header:hover  .social-whats 
  {
