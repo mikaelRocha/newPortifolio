@@ -11,10 +11,16 @@
     padding-top: 10px;
     flex-direction:column;
     background:black;
+   
     align-items:flex-start;
     text-indent: 10px;
     z-index: 10;
     
+}
+
+.my-projects h1
+{
+    color:white;
 }
 .container-projects
 {

@@ -1,3 +1,5 @@
+@import url("./headersVariables.css");
+
 @import url("./effect-layer.css");
 @import url("./container-social-header/container-social-header.css");
 @import url("./container-center-header/container-center-header.css");
@@ -8,20 +10,10 @@
 
 @import url("./animations.css");
 
+
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
-.main-header
-{
-    --header-width:100vw;
-    --header-height:850px;
-    --testBorder: 3px dashed rgb(255, 0, 0);
-/* Line Colors */
-    --verticalLines:yellow;
-    --horizontalLines:rgb(255, 255, 255);
-/* Line margins */
-    --horizontalLinesMargin:20%;
-    --verticalLinesMargin:22%;
-}
+
 
 .main-header
 {
@@ -30,20 +22,15 @@
     width: var(--header-width);
     height:var(--header-height);
     bottom:120px;
-    /* border: var(--testBorder); */
     
     align-items: center;
     justify-content:center;
-    background:url("https://images.pexels.com/photos/698808/pexels-photo-698808.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background: url("https://images.pexels.com/photos/698808/pexels-photo-698808.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
     background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size:cover;
+    background-repeat:no-repeat;
     background-position: center;
-    backdrop-filter: blur(0px);
-    background-color: black;
     z-index: 2;
- 
- 
 }
 
 
