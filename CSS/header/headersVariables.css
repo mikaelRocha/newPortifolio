@@ -1,6 +1,6 @@
 .main-header
 {
-    --header-height:850px;
+    --header-height:80vh;
     --header-width:100vw;
     --testBorder: 3px dashed rgb(255, 0, 0);
 
