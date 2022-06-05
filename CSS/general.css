@@ -29,3 +29,14 @@ body
     font-size:10pt;
     
 }
+
+.mouse-follower{
+    position:absolute;
+    transform:translate(-50%,-50%);
+    height:35px;
+    width:35px;
+    border-radius:50%;
+    border:20px solid rgb(255, 0, 0);
+    z-index: 99999;
+    pointer-events: none;
+  }
