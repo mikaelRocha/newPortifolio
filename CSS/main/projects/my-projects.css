@@ -79,7 +79,7 @@ opacity: 0;
 {
     background:rgba(255, 255, 255, 0.054);
 }
-.mouse-follower
+.project-description
 {
     position:absolute;
     background: rgb(24,21,21);
@@ -94,7 +94,7 @@ opacity: 0;
     right:0;
     z-index: 99999;
 }
-.mouse-follower p
+.project-description p
 {
     position: absolute; 
     font-size:10pt;
@@ -106,7 +106,7 @@ opacity: 0;
     ;
     color: rgb(255, 255, 255);
 }
-.project-holder:hover .mouse-follower
+.project-holder:hover .project-description
 {
 
     width:300px;

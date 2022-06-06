@@ -18,7 +18,7 @@ main
     /* border: 2px white solid; */
     z-index: 1;
 }
-main::before
+/* main::before
 {
     content:"";
     position: absolute;
@@ -35,11 +35,11 @@ main::before
     -1px 0 2px 0 black
     
     ;
-    z-index: 9;
+    z-index: 1;
 
     background-color:yellow;
   
-}
+} */
 
 
 

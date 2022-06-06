@@ -21,7 +21,6 @@
     display: flex;
     width: var(--header-width);
     height:var(--header-height);
-    bottom:120px;
     
     align-items: center;
     justify-content:center;
