@@ -14,7 +14,7 @@
    
     align-items:flex-start;
     text-indent: 10px;
-    z-index: 10;
+    z-index: 2;
     
 }
 
@@ -30,26 +30,27 @@
     position: relative;
     width: 100%;
     height:300px;
- 
     border:  2px solid red;
-    /* overflow: hidden; */
-
     border: 1px solid black;
+    
+    
+   
 }
+
 .container-projects ul
 {
     display:flex;
-    width: fit-content;
+    width: 100%;
     height:300px;
-
-    overflow: scroll;
     gap:10px;
+  
+    overflow-x:scroll;
     justify-content: flex-start;
     list-style: none;
     scrollbar-width: none;
 
 }
-.container-projects ul:-webkit-scrollbar-
+.container-projects ul::-webkit-scrollbar
 {
 opacity: 0;
 }
@@ -73,6 +74,7 @@ opacity: 0;
     ;
     color: rgb(255, 255, 255);
     font-size:60pt;
+    
 
 }
 .project-holder:before 
@@ -122,7 +124,8 @@ opacity: 0;
     transform-origin: right;
     transform: scaleX(0);
     right:0;
-    z-index: 99999;
+    z-index: 10;
+    
 }
 .project-holder:hover .project-description
 {
@@ -147,30 +150,32 @@ opacity: 0;
 
 .project-description p
 {
-    position: absolute; 
     display: flex;
+    position:relative;
     justify-content: center;
     align-items: center;
     font-size:11pt;
      transform: scaleX(-1);
      width:90%;
      height:80%;
-    top:0;
-    /* border:1px solid red; */
+    font-family: 'Concert One', cursive;
     text-shadow: none;
 
     transition:0.5s;
     filter:
-    drop-shadow(0px 0px 5px rgb(0,0,0))
-    drop-shadow(0px 0px 5px rgb(0,0,0))
-    drop-shadow(0px 0px 5px rgb(0,0,0))
     drop-shadow(0px 0px 5px rgb(0,0,0))
     ;
     color: rgb(255, 255, 255);
 }
 .project-description p:hover
 {
-    transform: scaleX(-1.5) scaleY(1.5);
+    filter:
+    drop-shadow(0px 0px 5px rgb(0,0,0))
+    drop-shadow(0px 0px 5px rgb(0,0,0))
+    drop-shadow(0px 0px 5px rgb(0,0,0))
+    drop-shadow(0px 0px 5px rgb(0,0,0))
+    ;
+    transform: scaleX(-1.2) scaleY(1.2);
     z-index: 1;
 }
 .btns-project-container
