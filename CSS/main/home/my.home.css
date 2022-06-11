@@ -1,4 +1,4 @@
-.my-home
+.home
 {
     position: relative;
     display:flex;
@@ -17,67 +17,52 @@
 
 
 }
-.my-home::before
+.home::before
 {
     content: " ";
-position: absolute;
-width : 4vw;
-height: 60px;
-left: -5vw;
-top:60%;
+    position: absolute;
+    width : 4vw;
+    height: 60px;
+    left: -5vw;
+    top:60%;
 
-background-color:yellow;
+    background-color:yellow;
 }
 
-.my-home::after
+.home::after
 {
     content: " ";
-position: absolute;
-width: 11px;
-height: 0;
+    position: absolute;
+    width: 11px;
+    height: 0;
 
-border-bottom: 120px solid rgba(187, 187, 49, 0.966);
-border-left: 0px solid rgba(255, 255, 0, 0);
-border-right: 0px solid rgba(255, 255, 0, 0);
+    border-bottom: 120px solid rgba(187, 187, 49, 0.966);
+    border-left: 0px solid rgba(255, 255, 0, 0);
+    border-right: 0px solid rgba(255, 255, 0, 0);
 
+    transform: skewY(100deg);
+    transform-origin: left;
 
-transform: skewY(100deg);
-
-
-
-left: -9px;
-top:50%;
-
-
-/* background-color:yellow; */
-transform-origin: left;
+    left: -9px;
+    top:50%;
 }
 
-
-
-
-
-.my-home article
+.home article
 {
     width: 100%;
     height:100%;
-    /* border: 1px solid black; */
     overflow: hidden;
-
-
 }
-.highlight-left
+.highlight__btn--left
 {
     position: absolute;
     width:150px;
     height:100%;
     left:0;
-    /* border: 1px solid rgb(236, 11, 11); */
-    /* border-right:  1px solid black; */
-  
+
     align-self: flex-end;
 }
-.highlight-left:before 
+.highlight__btn--left:before 
 {
     content: "";
     position: absolute;
@@ -85,13 +70,10 @@ transform-origin: left;
     height:400px;
     top:calc(50% - 200px);
     right:-1px;
-
-
     background:rgba(248, 248, 248, 0.555);
 }
-.highlight-left:after
+.highlight__btn--left:after
 {
-   
         content: "<";
     display: flex;
     position: absolute;
@@ -108,22 +90,17 @@ transform-origin: left;
     box-shadow:inset 0 0 50px 40px yellow,
     -10px 30px 10px -10px rgb(0, 0, 0)
     ;
-
-    
 }
-.highlight-left:hover.highlight-left:after
+.highlight__btn--left:hover.highlight__btn--left:after
 {
     color:white !important;
 }
 
-.highlight-left:hover
+.highlight__btn--left:hover
 {
     background:rgba(112, 109, 109, 0.301);
 }
-
-
-
-.highlight-right
+.highlight__btn--right
 {
     position: absolute;
     width:150px;
@@ -132,7 +109,7 @@ transform-origin: left;
     /* border: 1px solid rgb(184, 231, 15); */
     align-self: flex-end;
 }
-.highlight-right:before 
+.highlight__btn--right:before 
 {
     content: " ";
     position: absolute;
@@ -141,10 +118,9 @@ transform-origin: left;
     top:calc(50% - 200px);
     left:1px;
 
-
     background:rgb(255, 255, 255);
 }
-.highlight-right:after
+.highlight__btn--right:after
 {
         content: ">";
     display: flex;
@@ -163,19 +139,16 @@ transform-origin: left;
     -10px 30px 10px -10px rgb(0, 0, 0)
     ;
 }
-.highlight-right:hover.highlight-right:after
+.highlight__btn--right:hover.highlight__btn--right:after
 {
     color:white !important;
 }
 
-.highlight-right:hover
+.highlight__btn--right:hover
 {
     background:rgba(112, 109, 109, 0.3);
 }
-
-
-
-.highlight-border-bottom
+.highlight__bottom
 {
     position: absolute;
     width: 100%;
@@ -183,31 +156,24 @@ transform-origin: left;
     bottom:0;
     background-color:yellow;
 }
-
 #highlight-center ul
 {
     width: 100%;
-    height :80vw;
-   
-   
-    /* border: 1px solid rgb(146, 11, 236); */
+  
 }
-.container-soon
+.highlight__item
 {
     display: flex;
     width: 100%;
     height: 80vh;
-    /* border: 1px solid yellow; */
     margin-top:0;
 
     transition-duration: 0.3s;
 
     align-items: center;
     justify-content: center;
-   
-
 }
-.container-soon img
+.highlight__item img
 {
 width:  100%;
 height: 100%;

@@ -1,5 +1,5 @@
 
-.container-social-header
+.header__social
 {
 position:absolute;
 top:15vh;
@@ -13,7 +13,7 @@ background: inherit;
 --social-height: 100px;
 }
 
-.social-header
+.header__items
 {
     position: absolute;
     display: flex;
@@ -39,19 +39,8 @@ background: inherit;
     background:inherit;
     align-items:center; 
 }
-.social-header-place
-{
-   position: relative;
-   width: var(--social-width);
-   height: var(--social-height);
-   left: 0px;
-   top:0px;
- 
-   box-shadow: inset 0px 0 5px 0px black;
-   border-radius: 7%;
-   z-index: 4;
-}
-.container-social-header:hover > .social-header
+
+.header__social:hover > .header_items
 {
     width: calc(30% + var(--social-width));
     height: calc(10% + var(--social-height));
@@ -61,7 +50,7 @@ background: inherit;
     left: 30px;
     top:30px;
 }
-.social-whats
+.header__whats
 {
     /* position:relative; */
     display: flex;
@@ -82,11 +71,11 @@ background: inherit;
 {
     background-color:rgb(155, 64, 64); 
 }
- .social-header:hover  .social-whats 
+ .social-header:hover  .header__gmail
  {
     background-color:rgb(71, 173, 50); 
  }
-.social-gmail
+.header__gmail  
 {
     width: 50%;
     height:100%;
@@ -97,14 +86,14 @@ background: inherit;
 
     transition:0.5s; 
 }
-.social-whats:hover
+.header__whats:hover
 {
     transition:0.5s;
     width: 100%;
     height:100%;
     background-color:rgb(71, 167, 52);
 }
-.social-gmail:hover
+.header__gmail:hover
 {
     transition:0.5s;
     width:100%;

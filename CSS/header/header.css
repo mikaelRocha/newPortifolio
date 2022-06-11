@@ -1,26 +1,23 @@
 @import url("./headersVariables.css");
 
-@import url("./effect-layer.css");
-@import url("./container-social-header/container-social-header.css");
-@import url("./container-center-header/container-center-header.css");
-@import url("./container-menu-header/container-menu-header.css");
-@import url("./container-social-header/container-social-header.css");
-@import url("./container-cool-circle/container-cool-circle.css");
+@import url("./header__center/header__center.css");
+@import url("./header__menu/header__menu.css");
+@import url("./header__social/header__social.css");
+
 @import url("./highlight-big-image-on-right.css");
 
 @import url("./animations.css");
-
 
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
 
 
-.main-header
+.header
 {
     position: relative;
     display: flex;
     width: var(--header-width);
-    height:var(--header-height);
+    height: 90vh;
     
     align-items: center;
     justify-content:center;
@@ -30,6 +27,7 @@
     background-size:cover;
     background-repeat:no-repeat;
     background-position: center;
+
     z-index: 2;
 }
 
