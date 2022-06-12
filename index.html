@@ -14,8 +14,8 @@
         <div class="header__social">
 
             <div class="header__items">
-                <div class="header__whats"></div>
-                <div class="header__gmail"></div>
+                <div class="header__whats " btn="whats"></div>
+                <div class="header__gmail " btn="gmail"></div>
             </div>
         </div>
 
@@ -24,8 +24,8 @@
                 <h1>Mikael Rocha</h1>
                 <sub>Desenvolvedor Front-end</sub>
                 <ul class="header__linkGit">
-                    <li>Linkedin</li>
-                    <li>GitHub</li>
+                    <li  btn="linkedin">Linkedin</li>
+                    <li  btn="github"  >GitHub  </li>
                 </ul>
             </div>
             <div class="header__right">
@@ -51,9 +51,9 @@
     <main class="main">
         <section class="home">
     
-            <div class="highlight__btn--left" id="highlight-left">
+            <div class="highlight__btn--left" id="highlight__left">
             </div>
-            <div class="highlight__btn--right" id="highlight-right">
+            <div class="highlight__btn--right" id="highlight__right">
             </div>
     
             <div class="highlight__bottom">
@@ -109,7 +109,7 @@
                         <h1> Soon</h1>   
                         <div class='projects__description'>
                             <div class="projects__background"></div>
-                            <p>
+                            <article>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, unde adipisci provident
                                 impedit, rem
                                 incidunt illo ipsum blanditiis error placeat dolore id dignissimos, dicta non mollitia
@@ -120,11 +120,12 @@
                                 rem animi eaque totam dolor qui accusamus doloremque magni omnis? Culpa beatae explicabo
                                 quis
                                 assumenda soluta!
-                            </p>
-                            <div class="projects__btns">
-                            <span class="projects__code"><a href="">code</a> </span>
-                            <span class="projects__aplication"><a href="">aplication </a> </span>
-                            </div>
+                                <div class="projects__btns">
+                                    <span class="projects__code">      <a btn="code" href="">code              </a>  </span>
+                                    <span class="projects__application"><a btn="application" href="">aplication</a>  </span>
+                                </div>
+                            </article>
+                        
                         </div>
                     </li>
 
@@ -132,7 +133,7 @@
                         <h1> Soon</h1>   
                         <div class='projects__description'>
                             <div class="projects__background"></div>
-                            <p>
+                            <article>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, unde adipisci provident
                                 impedit, rem
                                 incidunt illo ipsum blanditiis error placeat dolore id dignissimos, dicta non mollitia
@@ -143,18 +144,30 @@
                                 rem animi eaque totam dolor qui accusamus doloremque magni omnis? Culpa beatae explicabo
                                 quis
                                 assumenda soluta!
-                            </p>
-                            <div class="projects__btns">
-                            <span class="projects__code">See code</span>
-                            <span class="projects__aplication">See aplication</span>
-                            </div>
+                                <div class="projects__btns">
+                                    <span class="projects__code">      <a btn="code" href="">code              </a>  </span>
+                                    <span class="projects__application"><a btn="application" href="">aplication</a>  </span>
+                                </div>
+                            </article>
+                        
                         </div>
                     </li>
+
+
     
                 </ul>
 
-                <span class="projects__scroller"> &lt;</span>
-                <span class="projects__scroller right">&gt;</span>
+                <span 
+                class="projects__scroller"       
+                btn="escroller-left">
+                 &lt;
+                </span>
+
+                <span 
+                class="projects__scroller right" 
+                btn="escroller-left">
+                &gt;
+                </span>
 
             </article>
     
@@ -179,7 +192,7 @@
         </section>
     </main>
 
-    <div id="ttop">^</div>
+    <div btn="tothetop">^</div>
 
     <script src="./index.js" type="module"></script>
 </body>
