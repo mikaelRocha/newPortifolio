@@ -1,5 +1,5 @@
 
-.container-menu-header
+.header__menu
 {
     position:absolute;
     left:calc(50%-70vw);
@@ -8,8 +8,7 @@
     margin-left: 0px;
     z-index: 3;
 
-}
-nav ul
+}.header__menu ul
 {
   display: flex;
   width: 70vw;
@@ -19,7 +18,7 @@ nav ul
   flex-direction: row;
   gap:10px;
 }
-nav ul li 
+.header__menu ul li 
 {
     position: relative;
     display: flex;
@@ -43,7 +42,7 @@ nav ul li
    
 }
 
-nav ul li::before 
+.header__menu ul li::before 
 {
     content: " ";
     position:absolute;
@@ -55,14 +54,14 @@ nav ul li::before
     background-color:rgb(0, 0, 0);
 
 }
-nav ul li:hover::before 
+.header__menu ul li:hover::before 
 {
     width:50%;
     transition: 2s;
     right:100px;
 }
 
-nav ul li:hover 
+.header__menu ul li:hover 
 {
     cursor: pointer;
     transition:0.5s;

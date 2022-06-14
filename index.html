@@ -9,42 +9,32 @@
 </head>
 <body>
     
-    <header class="main-header">
+    <header class="header">
   
-        <div class="effect-layer"></div>
+        <div class="header__social">
 
-        <div class="container-social-header">
-
-            <div class="social-header" background="">
-                <div class="social-whats"></div>
-                <div class="social-gmail"></div>
+            <div class="header__items">
+                <div class="header__whats " btn="whats"></div>
+                <div class="header__gmail " btn="gmail"></div>
             </div>
-
-            <div class="social-header-place">
-
-            </div>
-
         </div>
 
-        <div class="container-center-header">
-            <div class="header-center">
+        <div class="header__center">
+            <div class="header__title">
                 <h1>Mikael Rocha</h1>
                 <sub>Desenvolvedor Front-end</sub>
-                <ul class="linkGit">
-                    <li>Linkedin</li>
-                    <li>GitHub</li>
+                <ul class="header__linkGit">
+                    <li  btn="linkedin">Linkedin</li>
+                    <li  btn="github"  >GitHub  </li>
                 </ul>
             </div>
-            <div class="header-left">
-            </div>
-    
-            <div class="header-right">
+            <div class="header__right">
             <div></div>
             </div>
         </div>
         
-        <nav class="container-menu-header">
-            <ul class="my-menu">
+        <nav class="header__menu">
+            <ul>
                 <li id="b1">PROJECTS</li>
                 <li id="b2">ABOUT-ME</li>
                 <li id="b3">SKILLS POOL </li>
@@ -58,49 +48,49 @@
 
     </header>
     
-    <main>
-        <section class="my-home">
+    <main class="main">
+        <section class="home">
     
-            <div class="highlight-left" id="highlight-left">
+            <div class="highlight__btn--left" id="highlight__left">
             </div>
-            <div class="highlight-right" id="highlight-right">
+            <div class="highlight__btn--right" id="highlight__right">
             </div>
     
-            <div class="highlight-border-bottom">
+            <div class="highlight__bottom">
             </div>
     
             <article id="highlight-center">
                 <ul>
-                    <li id="first-highlight-li" class="container-soon">
+                    <li id="first-highlight-li" class="highlight__item">
                         <img id="first-highlight-li" src="./imgs/highlight-first-img.jpg" alt="">
                     </li>
     
-                    <li class="container-soon">
+                    <li class="highlight__item">
                         <img src="./imgs/highlight-first-img.jpg" alt="">
                     </li>
     
-                    <li class="container-soon">
+                    <li class="highlight__item">
                         <img src="https://images.pexels.com/photos/2330137/pexels-photo-2330137.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                             alt="">
                     </li>
     
-                    <li class="container-soon">
+                    <li class="highlight__item">
                         <img src="./imgs/highlight-first-img.jpg" alt="">
                     </li>
     
-                    <li class="container-soon">
+                    <li class="highlight__item">
                         <img src="./imgs/highlight-first-img.jpg" alt="">
                     </li>
     
-                    <li class="container-soon">
+                    <li class="highlight__item">
                         <img src="./imgs/highlight-first-img.jpg" alt="">
                     </li>
     
-                    <li class="container-soon">
+                    <li class="highlight__item">
                         <img src="./imgs/highlight-first-img.jpg" alt="">
                     </li>
     
-                    <li class="container-soon">
+                    <li class="highlight__item">
                         <img src="./imgs/highlight-first-img.jpg" alt="">
     
                     </li>
@@ -110,17 +100,42 @@
     
         </section>
     
-        <section class="my-projects">
-            <h1>PROJECTS</h1>
-            <article class="container-projects">
-                <ul>
-                    <li class="project-holder">
-                        Soon 0
-                        <div class='project-description'>
-                            <div class="background-project-description">
-    
-                            </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, unde adipisci provident
+        <section class="projects">
+            <h1 class="projects__h1">PROJECTS</h1>
+            <article class="projects__container">
+                <ul class="projects__ul">
+
+                    <li class="projects__item">
+                        <ul class="item__images">
+                            <li></li>
+                        </ul>
+                        <div class='projects__description'>
+                            <article>
+                                <p class="description">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, unde adipisci provident
+                                    impedit, rem
+                                    incidunt illo ipsum blanditiis error placeat dolore id dignissimos, dicta non mollitia
+                                    officia
+                                </p>
+                               <p class="technologys"> 
+                                nostrum minus voluptas?
+                                Optio enim aperiam perferendis eveniet quo laborum dolores quos architecto veritatis quae
+                               </p>
+                              
+                                <div class="projects__btns">
+                                    <span class="projects__code">      <a btn="code" href="">Code              </a>  </span>
+                                    <span class="projects__application"><a btn="application" href="">Aplication</a>  </span>
+                                </div>
+                            </article>
+                        
+                        </div>
+                    </li>
+
+                    <li class="projects__item">
+                        <div class='projects__description'>
+                            <div class="projects__background"></div>
+                            <article>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, unde adipisci provident
                                 impedit, rem
                                 incidunt illo ipsum blanditiis error placeat dolore id dignissimos, dicta non mollitia
                                 officia
@@ -129,117 +144,37 @@
                                 ipsa cum,
                                 rem animi eaque totam dolor qui accusamus doloremque magni omnis? Culpa beatae explicabo
                                 quis
-                                assumenda soluta!</p>
-                            <div class="btns-project-container">
-                                <span class="see-code-btn">See code</span>
-                                <span class="see-aplication-btn">See aplication</span>
-                            </div>
+                                assumenda soluta!
+                                <div class="projects__btns">
+                                    <span class="projects__code">      <a btn="code" href="">code              </a>  </span>
+                                    <span class="projects__application"><a btn="application" href="">aplication</a>  </span>
+                                </div>
+                            </article>
+                        
                         </div>
                     </li>
-    
-                    <li class="project-holder">
-                        Soon 1
-                        <div class='project-description'>
-                            <div class="background-project-description">
-    
-                            </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, unde adipisci provident
-                                impedit, rem
-                                incidunt illo ipsum blanditiis error placeat dolore id dignissimos, dicta non mollitia
-                                officia
-                                nostrum minus voluptas?
-                                Optio enim aperiam perferendis eveniet quo laborum dolores quos architecto veritatis quae
-                                ipsa cum,
-                                rem animi eaque totam dolor qui accusamus doloremque magni omnis? Culpa beatae explicabo
-                                quis
-                                assumenda soluta!</p>
-                            <div class="btns-project-container">
-                                <span class="see-code-btn">See the code</span>
-                                <span class="see-aplication-btn">See the aplication</span>
-                            </div>
-                        </div>
-                    </li>
-    
-                    <li class="project-holder">
-                        Soon 1
-                        <div class='project-description'>
-                            <div class="background-project-description">
-    
-                            </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, unde adipisci provident
-                                impedit, rem
-                                incidunt illo ipsum blanditiis error placeat dolore id dignissimos, dicta non mollitia
-                                officia
-                                nostrum minus voluptas?
-                                Optio enim aperiam perferendis eveniet quo laborum dolores quos architecto veritatis quae
-                                ipsa cum,
-                                rem animi eaque totam dolor qui accusamus doloremque magni omnis? Culpa beatae explicabo
-                                quis
-                                assumenda soluta!</p>
-                            <div class="btns-project-container">
-                                <span class="see-code-btn">See the code</span>
-                                <span class="see-aplication-btn">See the aplication</span>
-                            </div>
-                        </div>
-                    </li>
-    
-                    <li class="project-holder">
-                        Soon 1
-                        <div class='project-description'>
-                            <div class="background-project-description">
-    
-                            </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, unde adipisci provident
-                                impedit, rem
-                                incidunt illo ipsum blanditiis error placeat dolore id dignissimos, dicta non mollitia
-                                officia
-                                nostrum minus voluptas?
-                                Optio enim aperiam perferendis eveniet quo laborum dolores quos architecto veritatis quae
-                                ipsa cum,
-                                rem animi eaque totam dolor qui accusamus doloremque magni omnis? Culpa beatae explicabo
-                                quis
-                                assumenda soluta!</p>
-                            <div class="btns-project-container">
-                                <span class="see-code-btn">See the code</span>
-                                <span class="see-aplication-btn">See the aplication</span>
-                            </div>
-                        </div>
-                    </li>
-    
-                    <li class="project-holder">
-                        Soon 1
-                        <div class='project-description'>
-                            <div class="background-project-description">
-    
-                            </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, unde adipisci provident
-                                impedit, rem
-                                incidunt illo ipsum blanditiis error placeat dolore id dignissimos, dicta non mollitia
-                                officia
-                                nostrum minus voluptas?
-                                Optio enim aperiam perferendis eveniet quo laborum dolores quos architecto veritatis quae
-                                ipsa cum,
-                                rem animi eaque totam dolor qui accusamus doloremque magni omnis? Culpa beatae explicabo
-                                quis
-                                assumenda soluta!</p>
-                            <div class="btns-project-container">
-                                <span class="see-code-btn">See the code</span>
-                                <span class="see-aplication-btn">See the aplication</span>
-                            </div>
-                        </div>
-                    </li>
-    
+
+
     
                 </ul>
-                <span class="btns-projects-roller" id="roller-left">
-                    &lt;
+
+                <span 
+                class="projects__scroller"       
+                btn="escroller-left">
+                 &lt;
                 </span>
-                <span class="btns-projects-roller" id="roller-right">&gt;</span>
+
+                <span 
+                class="projects__scroller right" 
+                btn="escroller-left">
+                &gt;
+                </span>
+
             </article>
     
         </section>
     
-        <section class="my-about">
+        <section class="about">
             <div class="title">
                 <h1 class="h1-title">ABOUT ME</h1>
                 <div class="about-title01"></div>
@@ -248,21 +183,17 @@
             <section class="about-me-text">
     
                 <p>
-                    Hello there, this is Mikael I'm a begginer developer looking
+                    Hello there, this is Mikael
                 </p>
             </section>
         </section>
     
-        <div class="about-background-circle"></div>
-    
-        </section>
-    
-        <section class="my-pool">
+        <section class="pool">
             <h1>Skills Pool</h1>
         </section>
     </main>
 
-    <div id="ttop">^</div>
+    <div btn="tothetop">^</div>
 
     <script src="./index.js" type="module"></script>
 </body>

@@ -1,9 +1,8 @@
-const aboutButton = document.getElementById('b3');
-const projectsButton = document.getElementById('b2');
-const projectsElement       = document.querySelector('.my-projects');
-const aboutElement       = document.querySelector('.my-about');
-const myPool       = document.querySelector('.my-pool');
-// console.log(window) ;
+const aboutButton        = document.getElementById('b3');
+const projectsButton     = document.getElementById('b2');
+const projectsElement    = document.querySelector('.projects');
+const aboutElement       = document.querySelector('.about');
+const myPool             = document.querySelector('.pool');
 
 document.addEventListener("click", (event)=>
 {

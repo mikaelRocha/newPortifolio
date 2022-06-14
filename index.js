@@ -1,8 +1,25 @@
 
-import './JS/main/home/highlight.project.hover.js'
-import './JS/main/home/slide.btns.js'
+import UserInteractionController from './userInteractionController.js';
+import UserInteractionModel from './userInteractionModel.js';
+import UserInteractionView from './userInteractionView.js';
 
-import './JS/main/projects/my-projects.js'
+let newUserInteractionModel = new UserInteractionModel();
+let newUserInteractionview = new UserInteractionView();
+let newUserInteractionController = new UserInteractionController(
+    newUserInteractionModel,
+    newUserInteractionview);
 
-import './JS/menu.ttop.btns.js'
-import './JS/mouseFollower.js'
+let projectsUl = document.querySelector('.projects__ul');
+let projectsP  = document.querySelector('.projects__description div');
+
+newUserInteractionController.method01();
+
+projectsP.addEventListener('mouseenter',(event)=>
+{
+   newUserInteractionController.showProjectDescription(projectsUl)
+})
+
+projectsP.addEventListener('mouseout',(event)=>
+{
+    newUserInteractionController.hideProjectDescription(projectsUl)
+})

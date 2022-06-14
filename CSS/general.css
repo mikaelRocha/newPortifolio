@@ -12,7 +12,7 @@ body
     border: 0px white solid;
     overflow-x: hidden;
 }
-#ttop
+[btn="tothetop"]
 {
     position:fixed;
     display:flex;
@@ -27,6 +27,5 @@ body
     background-color: rgb(41, 37, 37);
     color:white;
     font-size:10pt;
-    
 }
 

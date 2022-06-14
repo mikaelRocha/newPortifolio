@@ -1,14 +1,7 @@
 
-const btnProjectRollerRight  = document.querySelector('#roller-left');
-const btnProjectRollerLeft   = document.querySelector('#roller-right');
-const firstProjectsLi        = document.querySelector('.container-projects ul');
-
-console.log
-(
- btnProjectRollerLeft,
- btnProjectRollerRight,
- firstProjectsLi
-);
+const btnProjectRollerRight  = document.querySelector('.right');
+const btnProjectRollerLeft   = document.querySelector('.projects__scroller');
+const firstProjectsLi        = document.querySelector('.projects__container ul');
 
 btnProjectRollerRight.addEventListener("click", (event)=>
 {

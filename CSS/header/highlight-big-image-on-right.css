@@ -6,13 +6,14 @@
     right:20%;
     bottom: calc(-49% - 120px);
     z-index: 4;
+    border-radius: 20% 20% 0 0;
     
     transition-duration: 1s;
 
     align-items:center;
     padding-top: 50px;
     flex-direction: column;
-    background-color: rgb(0, 204, 255);
+    background-color: rgb(255, 115, 0);
     pointer-events: none;
     
 }
@@ -55,7 +56,7 @@
     
     
     content: " ";
-   border-bottom: 100px solid rgb(0, 204, 255);
+   border-bottom: 100px solid rgb(255, 115, 0);
    border-left: 119px solid rgba(0, 0, 0, 0);
    border-right: 119px solid rgba(0, 0, 0, 0);
    transform-origin: bottom;
