@@ -7,17 +7,20 @@ class UserInteractionController {
 
     showProjectDescription(projectsUl) 
     {
-        userInteractionview.showProjectDescription(projectsUl)
+        this.userInteractionview.showProjectDescription(projectsUl)
     }
     hideProjectDescription(projectsUl) 
     {
-        userInteractionview.showProjectDescription(projectsUl)
+        this.userInteractionview.hideProjectDescription(projectsUl)
     }
 
 
-    method02(param01) 
+    getProjects(projectsJSON) 
     {
-        
+        this.userInteractionModel.getProjects(projectsJSON)
+        .then((response) => {
+             this.userInteractionview.showProjects(response)
+        })
     }
 }
 

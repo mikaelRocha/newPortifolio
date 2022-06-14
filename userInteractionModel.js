@@ -3,6 +3,17 @@ class UserInteractionModel {
     {
        
     }
+    getProjects(projectsJSON)
+    {
+        
+       return fetch(projectsJSON)
+        .then(((response) => response.json()))
+       
+
+        
+       
+    }
+ 
 
 }
 
