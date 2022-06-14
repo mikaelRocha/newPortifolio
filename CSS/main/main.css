@@ -1,6 +1,6 @@
 @import url("./home/mediasquerys/mainMedia.css");
-@import url("./home/my.home.css");
-@import url("./projects/my-projects.css");
+@import url("./home/home.css");
+@import url("./projects/projects.css");
 @import url("./about/about.css");
 
 
@@ -10,14 +10,14 @@
     display:flex;
     width: 100vw;
     height: fit-content;
-    top:80px;
+    top:0px;
 
     flex-direction: column;
     background-color: rgb(46, 45, 45);
     z-index: 1;
 }
 
-.my-pool
+.pool
 {
     position: relative;
     display:flex;
@@ -27,11 +27,8 @@
     margin:auto;
     margin-top:50px;
     border: 1px solid black;
-    
 
     flex-direction:row-reverse;
     justify-content: center;
     align-items: center;
-
-
 }

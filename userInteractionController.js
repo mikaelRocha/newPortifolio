@@ -1,17 +1,23 @@
 class UserInteractionController {
     constructor(userInteractionModel, userInteractionview) 
     {
-     
+      this.userInteractionview = userInteractionview;
+      this.userInteractionModel = userInteractionModel
     }
 
-    method01(param01) 
+    showProjectDescription(projectsUl) 
     {
-        console.log("method01");
+        userInteractionview.showProjectDescription(projectsUl)
     }
+    hideProjectDescription(projectsUl) 
+    {
+        userInteractionview.showProjectDescription(projectsUl)
+    }
+
 
     method02(param01) 
     {
-       
+        
     }
 }
 

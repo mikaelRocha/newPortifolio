@@ -18,18 +18,12 @@
     /* z-index: 2; */
     
 }
-.projects__h1
-{
-    color:white;
-}
 .projects__container
 {
     display:flex;
     position: relative;
     width: 100%;
     height:300px;
- 
-    /* border: 1px solid rgb(255, 0, 170); */
 }
 .projects__ul
 {
@@ -68,18 +62,21 @@ opacity: 0;
     10px 3px 10px green;
     ;
 }
-.projects__item:before 
+.item__images 
 {
-    content: " ";
-    position: absolute;
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-
-    filter:blur(10px);
-    box-shadow:inset 0 0 0 10px;
-    border: 20px solid yellow;
+    list-style: none;
 }
+.item__images  li 
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-bottom:1px solid yellow;
+
+}
+
 .projects__scroller 
 {
     display:flex;
@@ -129,29 +126,16 @@ opacity: 0;
     transform: scaleX(1);
     background: rgb(24,21,21);
   } 
-
-  .projects__background
-  {
-      background: url("https://images.pexels.com/photos/572897/pexels-photo-572897.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat;
-      background-size:cover;
-      background-position: center;
-      position: absolute;
-      width:100%;
-      height:100px;
-      top: 0;
-      /* border:1px solid red; */
-  }
-
-
 .projects__description article
 {
     display: flex;
     position: relative;
     width:90%;
     height:fit-content;
-    /* border: 2px solid #ccc; */
+    /* border: 1px solid red; */
 
     justify-content: center;
+    row-gap: 5px;
     flex-direction: column;
     align-items: center;
     font-size:11pt;
@@ -175,6 +159,11 @@ opacity: 0;
     ;
     transform: scaleX(1.7) scaleY(1.7);
 }
+.technologys
+{
+    font-size: 8pt;
+    color: grey;
+}
 
 .projects__btns
 {
@@ -185,11 +174,18 @@ opacity: 0;
     height: 30px;
     bottom:0;
     transition: 0.5s;
+    letter-spacing:5px;
+}
+
+.projects__btns a
+{
+    text-decoration: none;
+    color: white;
 }
 .projects__description article:hover .projects__btns
 {
     bottom:-10px;
-    width: 130%;
+    width: 110%;
     height: 40px;
 }
 
@@ -218,4 +214,14 @@ opacity: 0;
     font-size:14pt;
     color:white;
     text-shadow: 1px 1px 3px black;
+}
+.projects__application:hover
+{
+    cursor: pointer;
+    background:rgb(206, 253, 136);
+}
+.projects__code:hover
+{
+    cursor: pointer;
+    background:rgb(248, 169, 140);
 }
