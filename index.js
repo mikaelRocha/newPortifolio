@@ -10,9 +10,9 @@ let newUserInteractionController = new UserInteractionController(
     newUserInteractionview);
 
 let projectsUl = document.querySelector('.projects__ul');
-let projectsP  = document.querySelector('.projects__description div');
+let projectsP  = document.querySelector('.projects__description .description');
 
-newUserInteractionController.method01();
+// newUserInteractionController.method01();
 
 projectsP.addEventListener('mouseenter',(event)=>
 {
@@ -23,3 +23,6 @@ projectsP.addEventListener('mouseout',(event)=>
 {
     newUserInteractionController.hideProjectDescription(projectsUl)
 })
+
+
+newUserInteractionController.getProjects('http://127.0.0.1:5500/projects.json')
