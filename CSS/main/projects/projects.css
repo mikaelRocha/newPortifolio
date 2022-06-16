@@ -100,7 +100,7 @@ opacity: 0;
     background:rgba(255, 255, 255, 0.054);
 }
 
-.projects__description
+.project__description
 {
     position:absolute;
     display: flex;
@@ -112,20 +112,21 @@ opacity: 0;
     align-items: center;
     justify-content: center;
     transition-delay: 0.1s;
+  
     transform-origin: right;
     transform: scaleX(0);
     background: rgb(24,21,21);
     z-index: 1;
 }
 
-.projects__item:hover .projects__description
+.projects__item:hover .project__description
 {
     width:300px;
     right:-300px;
     transform: scaleX(1);
     background: rgb(24,21,21);
   } 
-.projects__description article
+.project__description article
 {
     display: flex;
     position: relative;
@@ -148,7 +149,7 @@ opacity: 0;
     color: rgb(255, 255, 255);
     z-index: 3;
 }
-.projects__description article:hover
+.project__description article:hover
 {
     filter:
     drop-shadow(0px 0px 5px rgb(0,0,0))
@@ -157,6 +158,11 @@ opacity: 0;
     drop-shadow(0px 0px 5px rgb(0,0,0))
     ;
     transform: scaleX(1.7) scaleY(1.7);
+}
+.description
+{
+    max-width: 100%;
+    word-wrap: break-word;
 }
 .technologys
 {
@@ -181,7 +187,7 @@ opacity: 0;
     text-decoration: none;
     color: white;
 }
-.projects__description article:hover .projects__btns
+.project__description article:hover .projects__btns
 {
     bottom:-30px;
     width: 110%;
