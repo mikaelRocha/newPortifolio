@@ -12,11 +12,10 @@
     padding-top: 10px;
     align-items:flex-start;
     flex-direction:column;
-    /* background:rgba(0, 0, 0, 0.37); */
-    text-indent: 10px;
-    
-    /* z-index: 2; */
-    
+}
+.projects__h1
+{
+    text-indent: 10px; 
 }
 .projects__container
 {
@@ -134,13 +133,13 @@ opacity: 0;
     height:fit-content;
     /* border: 1px solid red; */
 
-    justify-content: center;
-    row-gap: 5px;
-    flex-direction: column;
-    align-items: center;
+    justify-content: flex-start;
     font-size:11pt;
     font-family: 'Concert One', cursive;
+    row-gap: 5px;
     text-shadow: none;
+    flex-direction: column;
+    align-items: flex-start;
     
     transition:0.5s;
     filter:
@@ -184,7 +183,7 @@ opacity: 0;
 }
 .projects__description article:hover .projects__btns
 {
-    bottom:-10px;
+    bottom:-30px;
     width: 110%;
     height: 40px;
 }

@@ -7,7 +7,7 @@ class UserInteractionModel {
     {
         
        return fetch(projectsJSON)
-        .then(((response) => response.json()))
+        .then((response) => response.json())
        
 
         
