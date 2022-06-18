@@ -1,38 +1,35 @@
 
 .header__social
 {
-position:absolute;
-top:15vh;
-left: 5vh;
-height:300px;
-width:300px;
+    position:absolute;
+    height:10%;
+    width:10%;
+    top:5px;
+    left:5px;
+   
+    background: inherit;
+    transition:0.5s;
+}
 
-background: inherit;
-
---social-width: 250px;
---social-height: 100px;
+.header__social:hover
+{
+    transition:0.5s;
+    width:15%;
 }
 
 .header__items
 {
-    position: absolute;
     display: flex;
     flex-direction: row;
-    width: var(--social-width);
-    height: var(--social-height);
-    left: 0px;
-    top:0px;
-    border-radius: 0%;
-    /* border: 1px solid yellow; */
+    width: 100%;
+    height: 100%;
     box-shadow: 
-    inset 0px 0px 200px rgb(0, 0, 0),
     -1px -1px 5px 0px rgba(255, 255, 255, 0),
     -10px -10px 5px 5px rgba(0, 0, 0, 0),
     10px 10px 10px 10px rgba(3, 3, 3, 0);
-    border-radius: 5px;
+    border-radius:3%;
     overflow: hidden;  
-    z-index:5;
-    
+
     transition-duration: 0.5s; 
     
     justify-content:center;
@@ -40,63 +37,48 @@ background: inherit;
     align-items:center; 
 }
 
-.header__social:hover > .header_items
-{
-    width: calc(30% + var(--social-width));
-    height: calc(10% + var(--social-height));
-
-    transition-duration: 0.3s;
-
-    left: 30px;
-    top:30px;
-}
 .header__whats
 {
-    /* position:relative; */
     display: flex;
+    height:100%;
+    flex: 0.5;
+    
+    transition:0.5s;
+    
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 50%;
-    height:100%;
-
-    transition:0.5s;
- 
     background: url("../../../icons/app.png");
-    background-size: 50%;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
+    background-color:rgb(71, 167, 52);
+    z-index: 1;
 }
-.social-header:hover  .social-gmail
-{
-    background-color:rgb(155, 64, 64); 
-}
- .social-header:hover  .header__gmail
- {
-    background-color:rgb(71, 173, 50); 
- }
 .header__gmail  
 {
-    width: 50%;
+    display: flex;
     height:100%;
+    flex: 0.5;
     background: url("../../../icons/gmail-icon.png");
-    background-size: 50%;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
+    background-color:rgb(167, 48, 48);
 
     transition:0.5s; 
+
+    z-index: 1;
 }
-.header__whats:hover
+.header__whats:hover 
 {
     transition:0.5s;
-    width: 100%;
     height:100%;
-    background-color:rgb(71, 167, 52);
+    flex: 1;
 }
 .header__gmail:hover
 {
     transition:0.5s;
-    width:100%;
     height:100%;
-    background-color:rgb(167, 48, 48);
+    flex: 1;
 }

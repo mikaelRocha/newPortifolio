@@ -9,8 +9,11 @@ let newUserInteractionController = new UserInteractionController(
     newUserInteractionModel,
     newUserInteractionview);
 
+
 newUserInteractionController.getProjects('http://127.0.0.1:5500/projects.json')
-newUserInteractionController.clickEventHandler()
+
+
+document.addEventListener("click"    ,(event)=> {newUserInteractionController.clickEventHandler(event.target)})
 
 
 

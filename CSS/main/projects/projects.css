@@ -29,16 +29,16 @@
     display:flex;
     width:100vw;
     height:fit-content;
-    overflow:visible;
+    overflow-x:scroll;
     gap:10px;
     justify-content: flex-start;
     background:transparent;
     list-style: none;
-    scrollbar-width: none;
+    /* scrollbar-width: 10px; */
 }
 .projects__ul::-webkit-scrollbar
 {
-opacity: 0;
+opacity: 1;
 }
 .projects__item
 {

@@ -1,12 +1,11 @@
-@import url("./headersVariables.css");
 
 @import url("./header__center/header__center.css");
 @import url("./header__menu/header__menu.css");
 @import url("./header__social/header__social.css");
 
-@import url("./highlight-big-image-on-right.css");
 
-@import url("./animations.css");
+
+@import url("./animations__header.css");
 
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
@@ -16,7 +15,7 @@
 {
     position: relative;
     display: flex;
-    width: var(--header-width);
+    width: 100vw;
     height: 90vh;
     
     align-items: center;
@@ -28,7 +27,7 @@
     background-repeat:no-repeat;
     background-position: center;
 
-    z-index: 2;
+    z-index: 1;
 }
 
 

@@ -1,27 +1,15 @@
 class UserInteractionView {
-    showProjectDescription(projectsUl)
-    {
-        if(projectsUl.getAttribute("overflow") === "visible")
-        {
-             projectsUl.style.overflowY = 'scroll';
-        }
-    }
-
-    hideProjectDescription(projectsUl)
-    {
-        if(projectsUl.getAttribute("overflow") === "scroll")
-        {
-             projectsUl.style.overflowY = 'visible';
-        }
-    }
-
+ constructor()
+ {
+    this.projectsUl = document.querySelector('.projects__ul') 
+ }
     showProjects(GET_Projects)
     {
-        let projectsUl = document.querySelector('.projects__ul') 
+      
         console.log(GET_Projects);
         GET_Projects.forEach((element,idx) =>
         {
-            projectsUl.insertAdjacentHTML("afterbegin",`  
+            this.projectsUl.insertAdjacentHTML("afterbegin",`  
             <li class="projects__item">
                 <ul class="item__images">
                     <li></li>
@@ -44,7 +32,41 @@ class UserInteractionView {
                 </div>
             </li>`)
         })
+        this.descriptionZoomToggle()
     }
+
+    descriptionZoomToggle()
+    {
+       let  allProjects = document.querySelectorAll('.project__description');
+        
+        allProjects.forEach((element) =>
+        {
+            element.addEventListener('mouseover', (event) => {
+                this.projectsUl.style.overflow = 'visible';  
+            })
+            element.addEventListener('mouseout', (event) => {
+                this.projectsUl.style.overflow = 'scroll';  
+            })
+          
+        })
+    }   
+
+    scroller(side)
+    {
+       if(side === 'left'){ 
+        this.projectsUl.scrollBy({
+            top:0,
+            left:-500,
+            behavior: "smooth"
+        })
+       }else{ 
+        this.projectsUl.scrollBy({
+            top:0,
+            left:500,
+            behavior: "smooth"
+        })
+    }
+    }    
 }
 
 export default UserInteractionView
