@@ -114,8 +114,8 @@ header::after
     position: absolute;
     bottom:10%;
     height:10vh;
-    width:70%;
-    
+    width:100vw;
+    justify-content:center;
     gap:1vh;
 }
 .header__linkGit li
@@ -123,7 +123,7 @@ header::after
     display: flex;
     align-items: center;
     justify-content: center;
-    flex:0.8;
+    width:450px;
     list-style: none;
     border:1px solid white;
 }

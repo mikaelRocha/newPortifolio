@@ -2,18 +2,18 @@
 .header__menu
 {
     position:absolute;
-    left:calc(50%-70vw);
-    align-self:flex-end;
-    margin-bottom: 5px;
-    margin-left: 0px;
+    width:100vw;
+    display:flex;
+    align-items:center;
+    bottom:5px;
+
     z-index: 3;
 
 }.header__menu ul
 {
   display: flex;
-  width: 70vw;
-
-  /* border: 1px solid rgb(252, 252, 252); */
+  width: 100%;
+  justify-content:center;
 
   flex-direction: row;
   gap:10px;
@@ -24,7 +24,7 @@
     display: flex;
     flex: 0.3;
     justify-content:space-around;
-    height: 5vw;
+    height: 100px;
     margin: 1px;
     /* border-top: 1px solid rgb(255, 255, 255); */
     border-bottom: 1px solid rgba(255, 255, 255, 0.288);
