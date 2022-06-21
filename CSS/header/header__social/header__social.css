@@ -2,8 +2,8 @@
 .header__social
 {
     position:absolute;
-    height:10%;
-    width:10%;
+    height:50px;
+    width:200px;
     top:5px;
     left:5px;
    
@@ -14,7 +14,6 @@
 .header__social:hover
 {
     transition:0.5s;
-    width:15%;
 }
 
 .header__items

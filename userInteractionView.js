@@ -34,8 +34,6 @@ class UserInteractionView {
                 </div>
             </li>`)
         })
-
-        this.descriptionZoomToggle()
     }
 
     scroller(side)
@@ -47,7 +45,7 @@ class UserInteractionView {
             behavior: "smooth"
         })
        }
-       else if(side === 'right')
+       if(side === 'right')
        { 
         this.projectsUl.scrollBy({
             top:0,
@@ -55,22 +53,39 @@ class UserInteractionView {
             behavior: "smooth"
         })
         }    
-
-        let AllItems = document.querySelectorAll('[item]')
-        console.log(AllItems.length);
-        console.log(this.projectsUl.getBoundingClientRect().width);
-        console.log(this.projectsUl.scrollWidth - this.projectsUl.getBoundingClientRect().width);
-        
-        if ( this.projectsUl.scrollLeft >= this.projectsUl.scrollWidth - this.projectsUl.getBoundingClientRect().width) 
+        if (this.projectsUl.scrollLeft <= 0 && side === 'left') 
         {
-            this.projectsUl.scrollTo({
+            this.scrollerResetLeft(this.projectsUl)
+        }
+        if(this.projectsUl.scrollLeft >= this.projectsUl.scrollWidth - this.projectsUl.getBoundingClientRect().width && side === 'right')
+        {
+            this.scrollerResetRight(this.projectsUl)
+        }
+    }
+
+    scrollerResetLeft(target)
+    {
+        if ( target.scrollLeft <= 0) 
+        {
+            target.scrollTo({
+                top:0,
+                left:target.getBoundingClientRect().width ,
+                behavior: "smooth"
+            })
+        }
+    }
+
+    scrollerResetRight(target)
+    {
+        if ( target.scrollLeft >= target.scrollWidth - target.getBoundingClientRect().width) 
+        {
+            target.scrollTo({
                 top:0,
                 left:0,
                 behavior: "smooth"
             })
         }
     }
-   
 }
 
 export default UserInteractionView
