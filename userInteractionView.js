@@ -1,7 +1,7 @@
 class UserInteractionView {
  constructor()
  {
-    this.projectsUl = document.querySelector('.projects__ul') 
+    this.projectsUl = document.querySelector('.projects__container') 
  }
     showProjects(GET_Projects)
     {
@@ -9,8 +9,10 @@ class UserInteractionView {
         console.log(GET_Projects);
         GET_Projects.forEach((element,idx) =>
         {
+            console.log(idx, GET_Projects);
+            let lastChild = idx === 0? "last-project" : "";
             this.projectsUl.insertAdjacentHTML("afterbegin",`  
-            <li class="projects__item">
+            <li class="projects__item  ${lastChild}" item=''>
                 <ul class="item__images">
                     <li></li>
                 </ul>
@@ -19,9 +21,9 @@ class UserInteractionView {
                         <p class="description" project="description" >
                             ${element.description}
                         </p>
-                       <p class="technologys"  project="technologys"> 
+                        <p class="technologys"  project="technologys"> 
                             ${element.technologys}
-                       </p>
+                        </p>
 
                         <div class="projects__btns">
                             <span class="projects__code"       project="code">      <a btn="code" href="${element.LlinkCode}">Code              </a>  </span>
@@ -32,24 +34,9 @@ class UserInteractionView {
                 </div>
             </li>`)
         })
+
         this.descriptionZoomToggle()
     }
-
-    descriptionZoomToggle()
-    {
-       let  allProjects = document.querySelectorAll('.project__description');
-        
-        allProjects.forEach((element) =>
-        {
-            element.addEventListener('mouseover', (event) => {
-                this.projectsUl.style.overflow = 'visible';  
-            })
-            element.addEventListener('mouseout', (event) => {
-                this.projectsUl.style.overflow = 'scroll';  
-            })
-          
-        })
-    }   
 
     scroller(side)
     {
@@ -59,14 +46,31 @@ class UserInteractionView {
             left:-500,
             behavior: "smooth"
         })
-       }else{ 
+       }
+       else if(side === 'right')
+       { 
         this.projectsUl.scrollBy({
             top:0,
             left:500,
             behavior: "smooth"
         })
+        }    
+
+        let AllItems = document.querySelectorAll('[item]')
+        console.log(AllItems.length);
+        console.log(this.projectsUl.getBoundingClientRect().width);
+        console.log(this.projectsUl.scrollWidth - this.projectsUl.getBoundingClientRect().width);
+        
+        if ( this.projectsUl.scrollLeft >= this.projectsUl.scrollWidth - this.projectsUl.getBoundingClientRect().width) 
+        {
+            this.projectsUl.scrollTo({
+                top:0,
+                left:0,
+                behavior: "smooth"
+            })
+        }
     }
-    }    
+   
 }
 
 export default UserInteractionView
