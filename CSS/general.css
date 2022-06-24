@@ -17,15 +17,17 @@ body
     position:fixed;
     display:flex;
     bottom:10px;
-    right:0px;
-    width: 40px;
-    height:40px;
+    right:12px;
+    width: 80px;
+    height:80px;
     border-radius:50%;
     z-index: 999;
+  
     align-items:center;
     justify-content:center;
-    background-color: rgb(41, 37, 37);
-    color:white;
-    font-size:10pt;
+    background-color: yellow;
+    color:rgb(0, 0, 0);
+    font-size:20pt;
+    font-weight: 900;
 }
 

@@ -49,7 +49,7 @@ class UserInteractionView {
        { 
         this.projectsUl.scrollBy({
             top:0,
-            left:500,
+            left:520,
             behavior: "smooth"
         })
         }    
