@@ -1,4 +1,4 @@
-
+@import url('./header__links.css');
 .header__social
 {
     position:absolute;
@@ -9,6 +9,7 @@
    
     background: inherit;
     transition:0.5s;
+    z-index: 2;
 }
 
 .header__social:hover

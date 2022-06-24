@@ -30,7 +30,34 @@
 
     z-index: 1;
 }
-
+header::before
+{
+    position:absolute;
+    top:15%;
+    right:calc(50% - 20%);
+    content: "";
+    height:1px;
+    width:0%;
+    background-color:rgb(219, 209, 60);
+    z-index: 1;
+   
+    animation:topLine 4s forwards ;  
+}
+header::after
+{
+    
+    position:absolute;
+    bottom: 20%;
+    right:70%;
+    content: "";
+    height:1px;
+    width:0%;
+    background-color:rgb(219, 209, 60);
+    transform: rotate(180deg);
+    transform-origin:right;
+    z-index: 1;
+    animation:botLine 0.5s forwards 2.2s;  
+}
 
 
 
