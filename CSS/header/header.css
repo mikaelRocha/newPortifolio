@@ -1,11 +1,11 @@
 
+@import url("./animations__header.css");
 @import url("./header__center/header__center.css");
 @import url("./header__menu/header__menu.css");
 @import url("./header__social/header__social.css");
 
 
 
-@import url("./animations__header.css");
 
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 

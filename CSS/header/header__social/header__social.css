@@ -1,22 +1,21 @@
+/* @import url('../animations__header.css'); */
 @import url('./header__links.css');
 .header__social
 {
     position:absolute;
     height:50px;
     width:200px;
-    top:5px;
-    left:5px;
+    top:1vh;
+    left:1vw;
    
     background: inherit;
     transition:0.5s;
     z-index: 2;
 }
-
-.header__social:hover
+.header__social textarea
 {
-    transition:0.5s;
+    display:none;
 }
-
 .header__items
 {
     display: flex;
@@ -27,7 +26,6 @@
     -1px -1px 5px 0px rgba(255, 255, 255, 0),
     -10px -10px 5px 5px rgba(0, 0, 0, 0),
     10px 10px 10px 10px rgba(3, 3, 3, 0);
-    border-radius:3%;
     overflow: hidden;  
 
     transition-duration: 0.5s; 
@@ -36,7 +34,6 @@
     background:inherit;
     align-items:center; 
 }
-
 .header__whats
 {
     display: flex;
@@ -70,15 +67,4 @@
 
     z-index: 1;
 }
-.header__whats:hover 
-{
-    transition:0.5s;
-    height:100%;
-    flex: 1;
-}
-.header__gmail:hover
-{
-    transition:0.5s;
-    height:100%;
-    flex: 1;
-}
+

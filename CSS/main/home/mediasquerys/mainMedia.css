@@ -1,11 +1,24 @@
-@media (orientation: portrait) and (max-width: 1200px) {
-    .adv-aside
-    {
-        display: none;
-    }
-    .home article
-    {
-        
-        width: 95%;
-    }
+@media (max-width:500px)
+{
+.header__title h1 {
+    font-size:35pt;
+}
+.header__linkGit li
+{
+width:150px;
+}
+
+.header__menu ul li 
+{
+    height:70px;
+}
+
+.home:after
+{
+display:none;
+}
+.home:before
+{
+display:none;
+}
 }

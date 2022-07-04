@@ -102,4 +102,37 @@
 
 }
 
+@keyframes socialLinksIn
+{
+    50%
+    {
+        width:550px;
+        height:1px;
+    }
+    100%
+    {
+        width:550px;
+        height:80px;
+        animation-play-state: paused;
+    }
+}
+@keyframes socialLinksOut
+{
+    0%
+    {
+        width:550px;
+        height:1px;
+    }
+    20%
+    {
+        width:550px;
+        height:1px;
+    }
+    100%
+    {
+       
+        width:0px;
+        height:0px;
+    }
+}
 

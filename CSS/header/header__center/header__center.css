@@ -86,18 +86,21 @@
 {
     display:flex;
     position: absolute;
-    bottom:10%;
-    height:10vh;
     width:100vw;
+    height:20vh;
+    bottom:10%;
+
+    gap:5px;
     justify-content:center;
-    gap:1vh;
+    align-items:center
 }
 .header__linkGit li
 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width:450px;
+    height:100px;
+    width:400px;
     list-style: none;
     border:1px solid white;
 }
